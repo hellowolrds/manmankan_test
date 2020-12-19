@@ -14,7 +14,7 @@ var source5 = {
   '@css:div.comic_info > div.left > div.coverBox > div.cover > a > img@src',
   ruleComicInstro: 'id.words@text',
   ruleComicStatus: false,
-  ruleComicUpdate: '@css:div.main > div.chapterlist > div.chapterlist_box > div.bot > div.fl > span@text',
+  ruleComicUpdate: '@css:div.main > div.chapterlist > div.chapterlist_box > div.bot > div.fl > span@text@js:result.substring(7)',
   ruleChapterList: '@css:#chapter > li > a',
   ruleChapterName: 'text',
   ruleChapterUrl: 'href@js:java.splitHref(result, 1)',
