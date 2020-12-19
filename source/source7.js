@@ -13,7 +13,7 @@ var source7 = {
   '@css:.warp-main .comic-cover img@data-src',
   ruleComicInstro: 'id.layerOpenCon@text',
   ruleComicStatus: false,
-  ruleComicUpdate: 'class.update@text',
+  ruleComicUpdate: 'class.update@text#最后更新：',
   ruleChapterList: '@css:#chapterList li',
   ruleChapterName: 'text',
   ruleChapterUrl: 'tag.a@href',
