@@ -40,7 +40,7 @@ var source4 = {
 
   // 搜索
 
-  ruleSearchAuthor: 'class.mh-works-tags@tag.em@text',
+  ruleSearchAuthor: '@css:.mh-works-tags em@text',
   ruleSearchCid: 'tag.a@href@js:result=result.substring(1,result.length-1);result.replace("/", "_")',
   ruleSearchCoverUrl: 'class.mh-nlook-w@tag.img@src',
   ruleSearchList: 'class.mh-search-list@tag.li',
