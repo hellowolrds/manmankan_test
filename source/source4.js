@@ -4,7 +4,7 @@ var source4 = {
   comicSourceUrl: 'http://www.js518.net',
   enable: true,
   imgHeaders:
-  'function getHeader(){return Headers.of("Host","j.aiwenwo.net")}function getHeader2(url){return getHeader()}function getHeader3(){return getHeader()};',
+  'function getHeader(){return Headers.of("User-Agent","Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.183 Safari/537.36")}function getHeader2(url){return getHeader()}function getHeader3(){return getHeader()};',
  
   // 漫画详情
   ruleComicInfoUrl: 'http://www.js518.net/%s',
