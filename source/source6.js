@@ -24,7 +24,7 @@ var source6 = {
   'http://m.dm5.com/param2@Header:{"Referer": "http://m.dm5.com/param2"}',
  // /<script>var sFiles.+<\\/script>/ 要打\\两个反斜杠
   ruleComicContent:
-  'importClass(Packages.java.util.ArrayList);importClass(Packages.com.reader.comic.utils.StringUtils);importClass(Packages.com.reader.comic.utils.DecryptionUtils);importPackage(Packages.com.reader.comic.model);function parseImages(){var list=new ArrayList();var str=StringUtils.match("eval\\(.*\\)",content,0);if(str!=null){str=DecryptionUtils.evalDecrypt(str,"newImgs");var array=str.split(",");for(var i=0;i!=array.length;++i){list.add(new ImageUrl(i+1,array[i],false))}}return list};',
+  'importClass(Packages.java.util.ArrayList);importClass(Packages.com.reader.comic.utils.StringUtils);importClass(Packages.com.reader.comic.utils.DecryptionUtils);importPackage(Packages.com.reader.comic.model);function parseImages(){var list=new ArrayList();var str=StringUtils.match("eval\\\\(.*\\\\)",content,0);if(str!=null){str=DecryptionUtils.evalDecrypt(str,"newImgs");var array=str.split(",");for(var i=0;i!=array.length;++i){list.add(new ImageUrl(i+1,array[i],false))}}return list};',
 
   // 推荐
 
