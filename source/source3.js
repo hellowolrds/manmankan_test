@@ -23,7 +23,7 @@ var source3 = {
   ruleContentUrl:
   'param2@Header:{"User-Agent": "Mozilla/5.0 (Linux; Android 4.1.1; Nexus 7 Build/JRO03D) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166  Safari/535.19"}',
   ruleComicContent:
-  'importClass(Packages.java.util.ArrayList);importPackage(Packages.com.reader.comic.model);importPackage(Packages.java.lang);function parseImages(){var list=new ArrayList();return list};',
+  'importClass(Packages.java.util.ArrayList);importPackage(Packages.com.reader.comic.model);importPackage(Packages.java.lang);function parseImages(){var list=new ArrayList();var reg=/<script>var sFiles.+<\/script>/g;var result=content.match(reg)[0];result=result.replace("<script>","").replace("<\/script>","");return list};',
 
   // 推荐
 
