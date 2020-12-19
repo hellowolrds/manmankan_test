@@ -4,7 +4,7 @@ var source4 = {
   comicSourceUrl: 'http://www.js518.net',
   enable: true,
   imgHeaders:
-  'function getHeader(){return Headers.of("Referer","http://m.tuku.cc")}function getHeader2(url){return getHeader()}function getHeader3(){return getHeader()};',
+  'function getHeader(){return Headers.of("Host","j.aiwenwo.net")}function getHeader2(url){return getHeader()}function getHeader3(){return getHeader()};',
  
   // 漫画详情
   ruleComicInfoUrl: 'http://www.js518.net/%s',
