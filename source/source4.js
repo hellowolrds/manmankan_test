@@ -1,6 +1,6 @@
 
 var source4 = { 
-  comicSourceName: '汗汗酷漫',
+  comicSourceName: '极速漫画',
   comicSourceUrl: 'http://www.js518.net',
   enable: true,
   imgHeaders:
