@@ -39,7 +39,7 @@ var source2 = {
   // 搜索
 
   ruleSearchAuthor: 'comic_author',
-  ruleSearchCid: 'id',
+  ruleSearchCid: 'id@js:result.replace(".0", "")',
   ruleSearchCoverUrl: 'comic_cover',
   ruleSearchList: '@js:function getData(){eval(result);return g_search_data;}getData();',
   ruleSearchTitle: 'comic_name',
