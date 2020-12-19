@@ -27,15 +27,15 @@ var source8 = {
 
   // 推荐
 
-  ruleFindAuthor: '@css:.info .desc@text@js:result.split(" ")[0]',
-  ruleFindCid: 'tag.a@href@js:result=result.substring(1,result.length-1);result.replace("/", "_")',
+  ruleFindAuthor: '',
+  ruleFindCid: 'tag.a@href@js:java.splitHref(result,0)',
   ruleFindCoverUrl:
-  'tag.img@data-src',
-  ruleFindList: '@css:.comic-list .item',
+  '@css:.bcover > img@data-src',
+  ruleFindList: '@css:#contList > li',
   ruleFindTitle: 'class.info@class.title@text',
-  ruleFindUpdate: '@css:.info .desc@text@js:result.split(" ")[1]',
+  ruleFindUpdate: 'class.tt@text',
   ruleFindUrl:
-  '全部::http://www.517mh.net/sort/index_searchPage.html&&少年热血::http://www.517mh.net/manhua/rexue/index_searchPage.html&&武侠格斗::http://www.517mh.net/manhua/gedou/index_searchPage.html&&科幻魔幻::http://www.517mh.net/manhua/kehuan/index_searchPage.html&&竞技体育::http://www.517mh.net/manhua/tiyu/index_searchPage.html&&爆笑喜剧::http://www.517mh.net/manhua/xiju/index_searchPage.html&&侦探推理::http://www.517mh.net/manhua/tuili/index_searchPage.html&&其他漫画::http://www.517mh.net/manhua/qita/index_searchPage.html&&恐怖灵异::http://www.517mh.net/manhua/kongbulingyi/index_searchPage.html&&耽美人生::http://www.517mh.net/manhua/danmeirensheng/index_searchPage.html&&少女爱情::http://www.517mh.net/manhua/shaonvaiqing/index_searchPage.html&&恋爱生活::http://www.517mh.net/manhua/lianaishenghuo/index_searchPage.html&&生活漫画::http://www.517mh.net/manhua/shenghuomanhua/index_searchPage.html&&战争漫画::http://www.517mh.net/manhua/zhanzhengmanhua/index_searchPage.html&&故事漫画::http://www.517mh.net/manhua/gushimanhua/index_searchPage.html&&韩国漫画::http://www.517mh.net/manhua/hanguomanhua/index_searchPage.html&&中国漫画::http://www.517mh.net/manhua/zhongguomanhua/index_searchPage.html',
+  '全部::http://www.wuqimh.com/list/p-searchPage&&热血::http://www.wuqimh.com/list/smid-1-order-id-p-searchPage&&武侠::http://www.wuqimh.com/list/smid-2-order-id-p-searchPage&&搞笑::http://www.wuqimh.com/list/smid-3-order-id-p-searchPage&&耽美::http://www.wuqimh.com/list/smid-4-order-id-p-searchPage&&爱情::http://www.wuqimh.com/list/smid-5-order-id-p-searchPage&&科幻::http://www.wuqimh.com/list/smid-6-order-id-p-searchPage&&魔法::http://www.wuqimh.com/list/smid-7-order-id-p-searchPage&&神魔::http://www.wuqimh.com/list/smid-8-order-id-p-searchPage&&竞技::http://www.wuqimh.com/list/smid-9-order-id-p-searchPage&&格斗::http://www.wuqimh.com/list/smid-10-order-id-p-searchPage&&机战::http://www.wuqimh.com/list/smid-11-order-id-p-searchPage&&体育::http://www.wuqimh.com/list/smid-12-order-id-p-searchPage&&运动::http://www.wuqimh.com/list/smid-13-order-id-p-searchPage&&校园::http://www.wuqimh.com/list/smid-14-order-id-p-searchPage&&励志::http://www.wuqimh.com/list/smid-15-order-id-p-searchPage&&历史::http://www.wuqimh.com/list/smid-16-order-id-p-searchPage&&伪娘::http://www.wuqimh.com/list/smid-17-order-id-p-searchPage&&百合::http://www.wuqimh.com/list/smid-18-order-id-p-searchPage&&后宫::http://www.wuqimh.com/list/smid-19-order-id-p-searchPage&&治愈::http://www.wuqimh.com/list/smid-20-order-id-p-searchPage&&美食::http://www.wuqimh.com/list/smid-21-order-id-p-searchPage&&推理::http://www.wuqimh.com/list/smid-22-order-id-p-searchPage&&悬疑::http://www.wuqimh.com/list/smid-23-order-id-p-searchPage&&恐怖::http://www.wuqimh.com/list/smid-24-order-id-p-searchPage&&职场::http://www.wuqimh.com/list/smid-25-order-id-p-searchPage&&BL::http://www.wuqimh.com/list/smid-26-order-id-p-searchPage&&剧情::http://www.wuqimh.com/list/smid-27-order-id-p-searchPage&&生活::http://www.wuqimh.com/list/smid-28-order-id-p-searchPage&&幻想::http://www.wuqimh.com/list/smid-29-order-id-p-searchPage&&战争::http://www.wuqimh.com/list/smid-30-order-id-p-searchPage&&仙侠::http://www.wuqimh.com/list/smid-33-order-id-p-searchPage&&性转换::http://www.wuqimh.com/list/smid-40-order-id-p-searchPage&&冒险::http://www.wuqimh.com/list/smid-41-order-id-p-searchPage&&其他::http://www.wuqimh.com/list/smid-32-order-id-p-searchPage',
 
   // 搜索
 
