@@ -40,7 +40,7 @@ var source8 = {
   // 搜索
 
   ruleSearchAuthor: '@css:dl:eq(1) > a > dd@text',
-  ruleSearchCid: '@css:a:eq(0)@href',
+  ruleSearchCid: '@css:a+dl>a@href@js:java.splitHref(result, 0)',
   ruleSearchCoverUrl: '@css:a:eq(0) > div.thumb > img@data-src',
   ruleSearchList: '@css:#data_list > li',
   ruleSearchTitle: '@css:a:eq(0) > h3@text',
