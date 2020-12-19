@@ -27,11 +27,11 @@ var source3 = {
   importClass(Packages.java.util.ArrayList)
   importPackage(Packages.com.reader.comic.model)
   importPackage(Packages.java.lang)
-  importClass(Packages.com.reader.comic.utils.StringUtils)
+  
   
   function parseImages() {
      var list = new ArrayList();
-     var reg = StringUtils.match("<script>var sFiles.+<\/script>", content, 1);
+     var reg = /(<script>var sFiles.+<\/script>)/g;
      var result = content.match(reg)[0];
      result = result.replace("<script>", "").replace("</script>", "");
      eval(result);
