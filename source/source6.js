@@ -7,7 +7,7 @@ var source6 = {
   'function getHeader(){return Headers.of("Referer","http://www.u17.com")}function getHeader2(url){return getHeader()}function getHeader3(){return getHeader()};',
  
   // 漫画详情
-  ruleComicInfoUrl: 'http://www.dm5.com/%s.html',
+  ruleComicInfoUrl: 'http://m.dm5.com/%s.html',
   ruleComicTitle: '@css:.banner_detail_form .info .title@text',
   ruleComicAuthor: '@css:div.banner_detail_form > div.info > p.subtitle > a@text',
   ruleComicCover:
