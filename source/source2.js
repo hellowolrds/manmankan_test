@@ -21,9 +21,9 @@ var source2 = {
 
   // 图片详情
   ruleContentUrl:
-  'http://api.zymk.cn/app_api/v5/getcomicinfo/?comic_id=param1',
+  'http://v2.api.dmzj.com/chapter/param1/param2.json',
   ruleComicContent:
-  '',
+  'importPackage(Packages.org.json);importPackage(Packages.com.reader.comic.model);importClass(Packages.java.util.ArrayList);function parseImages(){var list=new ArrayList();var object=new JSONObject(content);var array=object.getJSONArray("page_url");for(var i=0;i<array.length();i++){list.add(new ImageUrl(i+1,array.getString(i),false))}return list};',
 
   // 推荐
 
