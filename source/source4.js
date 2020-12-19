@@ -47,7 +47,7 @@ var source4 = {
   ruleSearchTitle: 'class.mh-works-title@tag.h4@text',
   ruleSearchUpdate: 'class.mh-works-author@text',
   ruleSearchUrl:
-  'http://www.js518.net/statics/search.aspx?key==searchKey&page=searchPage',
+  'http://www.js518.net/statics/search.aspx?key=searchKey&page=searchPage',
 
 
   sort: '4',
