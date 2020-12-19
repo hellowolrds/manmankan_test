@@ -4,7 +4,7 @@ var source6 = {
   comicSourceUrl: 'http://m.dm5.com',
   enable: true,
   imgHeaders:
-  'function getHeader(){return Headers.of("Referer","http://www.u17.com")}function getHeader2(url){return getHeader()}function getHeader3(){return getHeader()};',
+  'importClass(Packages.com.reader.comic.utils.StringUtils);function getHeader(){return Headers.of("Referer","http://m.dm5.com/")}function getHeader2(url){var cid="m".concat(StringUtils.match("cid=(\\d+)",url,1));return Headers.of("Referer","http://m.dm5.com/".concat(cid))}function getHeader3(){var cid="";if(list!=null){cid=list.get(0).getChapter()}return Headers.of("Referer","http://m.dm5.com/".concat(cid))};',
  
   // 漫画详情
   ruleComicInfoUrl: 'http://m.dm5.com/%s/',
@@ -15,7 +15,7 @@ var source6 = {
   ruleComicInstro: 'id.detail-desc@text',
   ruleComicStatus: false,
   ruleComicUpdate: 'class.detail-list-title-3@text',
-  ruleChapterList: '@css:#detail-list-select-1 li',
+  ruleChapterList: '-@css:#detail-list-select-1 li',
   ruleChapterName: 'class.detail-list-2-info-title@text',
   ruleChapterUrl: 'tag.a@href@js:java.splitHref(result, 0)',
 
