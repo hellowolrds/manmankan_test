@@ -31,7 +31,7 @@ var source3 = {
   
   function parseImages() {
      var list = new ArrayList();
-     var reg = /(<script>var sFiles.+<\/script>)/g;
+     var reg = /.+/g;
      var result = content.match(reg)[0];
      result = result.replace("<script>", "").replace("</script>", "");
      eval(result);
