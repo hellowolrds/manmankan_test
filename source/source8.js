@@ -3,27 +3,27 @@ var source8 = {
   comicSourceUrl: 'http://m.wuqimh.com',
   enable: true,
   imgHeaders:
-  'function getHeader(){return Headers.of("Referer","http://www.hhmmoo.com")}function getHeader2(url){return getHeader()}function getHeader3(){return getHeader()};',
+  'function getHeader(){return Headers.of("Referer","http://m.wuqimh.com/")}function getHeader2(url){return getHeader()}function getHeader3(){return getHeader()};',
  
   // 漫画详情
-  ruleComicInfoUrl: 'http://www.517mh.net/%s/',
-  ruleComicTitle: '@css:.warp-main .title-warper .title@text',
-  ruleComicAuthor: '',
+  ruleComicInfoUrl: 'http://m.wuqimh.com/%s/',
+  ruleComicTitle: '@css:div.main-bar > h1@text',
+  ruleComicAuthor: '@css:div.book-detail > div.cont-list > dl:eq(3) > dd@text',
   ruleComicCover:
-  '@css:.warp-main .comic-cover img@data-src',
-  ruleComicInstro: 'id.layerOpenCon@text',
+  '@css:div.book-detail > div.cont-list > div.thumb > img@src',
+  ruleComicInstro: 'id.bookIntro@text',
   ruleComicStatus: false,
-  ruleComicUpdate: 'class.update@text@js:result.replace("最后更新", "")',
-  ruleChapterList: '@css:#chapterList li',
+  ruleComicUpdate: '@css:div.book-detail > div.cont-list > dl:eq(7) > dd@text',
+  ruleChapterList: '@css:#chapterList > ul > li > a',
   ruleChapterName: 'text',
-  ruleChapterUrl: 'tag.a@href',
+  ruleChapterUrl: 'href@js:java.splitHref(result,1)',
 
   // 图片详情
   ruleContentUrl:
-  'http://www.517mh.net/param2',
+  'http://m.wuqimh.com/param1/param2.html',
  // /<script>var sFiles.+<\\/script>/ 要打\\两个反斜杠
   ruleComicContent:
-  'importClass(Packages.java.util.ArrayList);importClass(Packages.com.reader.comic.utils.StringUtils);importPackage(Packages.com.reader.comic.model);function parseImages(){var list=new ArrayList();var base_url="http://image.xmanhua.com/";var data=StringUtils.match("chapter_list_all:(.+)]",content,1);data=data.replace("[","");var image_urls=data.split(",");for(var i=0;i<image_urls.length;i++){var url=image_urls[i];url=url.replace(\'"\',"").replace(\'"\',"");list.add(new ImageUrl(i+1,url,false))}return list};',
+  'importClass(Packages.java.util.ArrayList);importClass(Packages.com.reader.comic.utils.DecryptionUtils);importPackage(Packages.org.json);importClass(Packages.com.reader.comic.utils.StringUtils);function parseImages(){var list=new ArrayList();var packed=StringUtils.match("eval(.*?)\\\\n",content,1);if(packed!=null){var result=DecryptionUtils.evalDecrypt(packed);var jsonString=StringUtils.match("\'fs\':\\\\s*(\\\\[.*?\\\\])",result,1);var array=new JSONArray(jsonString);var size=array.length();for(var i=0;i!=size;++i){var url=array.getString(i);if(url.indexOf("http://")==-1){url="http://images.lancaier.com"+url}list.add(new ImageUrl(i+1,url,false))}}return list};',
 
   // 推荐
 
