@@ -8,7 +8,7 @@ var source4 = {
  
   // 漫画详情
   ruleComicInfoUrl: 'http://www.js518.net/%s',
-  ruleComicTitle: 'class.mh-date-info@class.mh-date-info-name@tag.h4',
+  ruleComicTitle: 'class.mh-date-info@class.mh-date-info-name@tag.h4@text',
   ruleComicAuthor: 'class.mh-pdt30@class.one@tag.em@text',
   ruleComicCover:
   'class.mh-date-bgpic@tag.img@src',
