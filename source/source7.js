@@ -13,7 +13,7 @@ var source7 = {
   '@css:.warp-main .comic-cover img@data-src',
   ruleComicInstro: 'id.layerOpenCon@text',
   ruleComicStatus: false,
-  ruleComicUpdate: '@css:#randomColor c1@text',
+  ruleComicUpdate: 'class.update@text',
   ruleChapterList: '@css:#chapterList li',
   ruleChapterName: 'text',
   ruleChapterUrl: 'tag.a@href',
