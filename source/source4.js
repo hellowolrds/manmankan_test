@@ -24,7 +24,7 @@ var source4 = {
   'http://www.js518.net/param2',
  // /<script>var sFiles.+<\\/script>/ 要打\\两个反斜杠
   ruleComicContent:
-  'importClass(Packages.com.reader.comic.utils.StringUtils);importPackage(Packages.com.reader.comic.model);importClass(Packages.java.util.ArrayList);importClass(Packages.com.reader.comic.utils.DecryptionUtils);function parseImages(){var list=new ArrayList();var base_url="http://j.aiwenwo.net/";var data=StringUtils.match(\'qTcms_S_m_murl_e=\\"(.+)\\";\',content,1);var image_urls=DecryptionUtils.base64Decrypt(data);var temp=image_urls.split("\$qingtiandy\$");for(var i=0;i<temp.length;i++){var url=temp[i];list.add(new ImageUrl(i+1,base_url+url,false));i++}return list};',
+  'importClass(Packages.com.reader.comic.utils.StringUtils);importPackage(Packages.com.reader.comic.model);importClass(Packages.java.util.ArrayList);importClass(Packages.com.reader.comic.utils.DecryptionUtils);function parseImages(){var list=new ArrayList();var base_url="http://j.aiwenwo.net/";var data=StringUtils.match(\'qTcms_S_m_murl_e=\\"(.+)\\";\',content,1);var image_urls=DecryptionUtils.base64Decrypt(data);var temp=image_urls.split("\\\\$qingtiandy\\\\$");for(var i=0;i<temp.length;i++){var url=temp[i];list.add(new ImageUrl(i+1,base_url+url,false));i++}return list};',
 
   // 推荐
 
