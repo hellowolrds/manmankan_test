@@ -25,17 +25,56 @@ var source3 = {
   ruleComicContent:
   `
   importClass(Packages.java.util.ArrayList)
-importPackage(Packages.com.reader.comic.model)
-importPackage(Packages.java.lang)
-
-
-function parseImages() {
-   var list = new ArrayList();
-   var reg = /<script>var sFiles.+<\/script>/;
- ]
-   return list;
-}
-
+  importPackage(Packages.com.reader.comic.model)
+  importPackage(Packages.java.lang)
+  
+  
+  function parseImages() {
+     var list = new ArrayList();
+     var reg = /<script>var sFiles.+<\/script>/;
+     var result = content.match(reg)[0];
+     result = result.replace("<script>", "").replace("</script>", "");
+     eval(result);
+     sFiles = unsuan(sFiles);
+     var arrFiles = sFiles.split("|");
+     var sDomain = "http://18.125084.com/dm03/";
+     for(var i=0;i<arrFiles.length;i++) {
+          var img = sDomain + arrFiles[i];
+          var imageUrl = new ImageUrl(i + 1, img, false);
+          list.add(imageUrl);
+     }
+     return list;
+  }
+  
+  function unsuan(s)
+  {
+    var sw="ssoonn.com|m.99comic.com|ssoozz.com";
+    var su = "ssoonn.com";
+    var b=false;
+    for(var i=0;i<sw.split("|").length;i++) {
+        if(su.indexOf(sw.split("|")[i])>-1) {
+            b=true;
+            break;
+          }
+      }
+      if(!b)return "";
+  
+      var x = s.substring(s.length-1);
+      var xi="abcdefghijklmnopqrstuvwxyz".indexOf(x)+1;
+      var sk = s.substring(s.length-xi-12,s.length-xi-1);
+      s=s.substring(0,s.length-xi-12);
+    var k=sk.substring(0,sk.length-1);
+    var f=sk.substring(sk.length-1);
+    for(var i=0;i<k.length;i++) {
+        eval("s=s.replace(/"+ k.substring(i,i+1) +"/g,\'"+ i +"\')");
+    }
+      var ss = s.split(f);
+    s="";
+    for(var i=0;i<ss.length;i++) {
+        s+=String.fromCharCode(ss[i]);
+      }
+      return s;
+  }
   `,
 
   // 推荐
