@@ -3,7 +3,7 @@ var source9 = {
   comicSourceUrl: 'https://www.mh160.xyz',
   enable: true,
   imgHeaders:
-  'function getHeader(){return Headers.of("Referer","http://m.wuqimh.com/")}function getHeader2(url){return getHeader()}function getHeader3(){return getHeader()};',
+  'function getHeader(){return Headers.of("Referer","https://www.mh160.xyz/")}function getHeader2(url){return getHeader()}function getHeader3(){return getHeader()};',
  
   // 漫画详情
   ruleComicInfoUrl: 'https://www.mh160.xyz/kanmanhua/%s@Header:{"Referer":"https://www.mh160.xyz","Host":"www.mh160.xyz"}',
