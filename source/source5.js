@@ -7,17 +7,17 @@ var source5 = {
   'function getHeader(){return Headers.of("User-Agent","Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.183 Safari/537.36")}function getHeader2(url){return getHeader()}function getHeader3(){return getHeader()};',
  
   // 漫画详情
-  ruleComicInfoUrl: 'http://www.js518.net/%s',
-  ruleComicTitle: 'class.mh-date-info@class.mh-date-info-name@tag.h4@text',
-  ruleComicAuthor: 'class.mh-pdt30@class.one@tag.em@text',
+  ruleComicInfoUrl: 'http://www.u17.com/comic/%s.html',
+  ruleComicTitle: '@css:div.comic_info > div.left > h1.fl@text',
+  ruleComicAuthor: '@css:div.comic_info > div.right > div.author_info > div.info > a.name@text',
   ruleComicCover:
-  'class.mh-date-bgpic@tag.img@src',
-  ruleComicInstro: 'id.workint@text',
+  '@css:div.comic_info > div.left > div.coverBox > div.cover > a > img@src',
+  ruleComicInstro: 'id.words@text',
   ruleComicStatus: false,
-  ruleComicUpdate: '',
-  ruleChapterList: 'id.mh-chapter-list-ol-0@tag.li',
+  ruleComicUpdate: '@css:div.main > div.chapterlist > div.chapterlist_box > div.bot > div.fl > span@text',
+  ruleChapterList: '@css:#chapter > li > a',
   ruleChapterName: 'text',
-  ruleChapterUrl: 'tag.a@href',
+  ruleChapterUrl: 'href@js:java.splitHref(result, 1)',
 
   // 图片详情
   ruleContentUrl:
