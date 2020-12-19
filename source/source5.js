@@ -41,7 +41,7 @@ var source5 = {
   // 搜索
 
   ruleSearchAuthor: '@css:div:eq(1) > h3 > a[title]@text',
-  ruleSearchCid: '@css:div:eq(1) > h3 > strong > a@text@js:java.splitHref(result,1)',
+  ruleSearchCid: '@css:div:eq(1) > h3 > strong > a@href@js:java.splitHref(result,1)',
   ruleSearchCoverUrl: '@css:div:eq(0) > a > img@src',
   ruleSearchList: '@css:#comiclist > div.search_list > div.comiclist > ul > li > div',
   ruleSearchTitle: '@css:div:eq(1) > h3 > strong > a@title',
