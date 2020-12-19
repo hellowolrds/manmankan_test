@@ -28,15 +28,15 @@ var source3 = {
 
   // 推荐
 
-  ruleFindAuthor: '$.authors',
-  ruleFindCid: '$.id',
+  ruleFindAuthor: '@css:.con h3+p@text',
+  ruleFindCid: 'class.pic@tag.a@href@js:result=java.splitHref(result, -1);',
   ruleFindCoverUrl:
-  '$.cover@js:"https://images.dmzj.com/"+result',
-  ruleFindList: '$.*',
-  ruleFindTitle: '$.name',
-  ruleFindUpdate: '$.last_updatetime@js:java.getFormatTime("yyyy-MM-dd", result*1000)',
+  'tag.img@src',
+  ruleFindList: 'class.main@class.se-list@tag.li',
+  ruleFindTitle: 'class.con@tag.h3@text',
+  ruleFindUpdate: '',
   ruleFindUrl:
-  '全部::http://m.dmzj.com/classify/0-0-0-0-0-searchPage.json&&冒险::http://m.dmzj.com/classify/1-0-0-0-0-searchPage.json&&欢乐向::http://m.dmzj.com/classify/2-0-0-0-0-searchPage.json&&格斗::http://m.dmzj.com/classify/3-0-0-0-0-searchPage.json&&科幻::http://m.dmzj.com/classify/4-0-0-0-0-searchPage.json&&爱情::http://m.dmzj.com/classify/5-0-0-0-0-searchPage.json&&竞技::http://m.dmzj.com/classify/6-0-0-0-0-searchPage.json&&魔法::http://m.dmzj.com/classify/7-0-0-0-0-searchPage.json&&校园::http://m.dmzj.com/classify/8-0-0-0-0-searchPage.json&&悬疑::http://m.dmzj.com/classify/9-0-0-0-0-searchPage.json&&恐怖::http://m.dmzj.com/classify/10-0-0-0-0-searchPage.json&&生活亲情::http://m.dmzj.com/classify/11-0-0-0-0-searchPage.json&&百合::http://m.dmzj.com/classify/12-0-0-0-0-searchPage.json&&伪娘::http://m.dmzj.com/classify/13-0-0-0-0-searchPage.json&&耽美::http://m.dmzj.com/classify/14-0-0-0-0-searchPage.json&&后宫::http://m.dmzj.com/classify/15-0-0-0-0-searchPage.json&&萌系::http://m.dmzj.com/classify/16-0-0-0-0-searchPage.json&&治愈::http://m.dmzj.com/classify/17-0-0-0-0-searchPage.json&&武侠::http://m.dmzj.com/classify/18-0-0-0-0-searchPage.json&&职场::http://m.dmzj.com/classify/19-0-0-0-0-searchPage.json&&奇幻::http://m.dmzj.com/classify/20-0-0-0-0-searchPage.json&&节操::http://m.dmzj.com/classify/21-0-0-0-0-searchPage.json&&轻小说::http://m.dmzj.com/classify/22-0-0-0-0-searchPage.json&&搞笑::http://m.dmzj.com/classify/23-0-0-0-0-searchPage.json',
+  '萌系::http://ssoonn.com/lists/1/searchPage/&&搞笑::http://ssoonn.com/lists/2/searchPage/&&格斗::http://ssoonn.com/lists/3/searchPage/&&科幻::http://ssoonn.com/lists/4/searchPage/&&剧情::http://ssoonn.com/lists/5/searchPage/&&侦探::http://ssoonn.com/lists/6/searchPage/&&竞技::http://ssoonn.com/lists/7/searchPage/&&魔法::http://ssoonn.com/lists/8/searchPage/&&神鬼::http://ssoonn.com/lists/9/searchPage/&&校园::http://ssoonn.com/lists/10/searchPage/&&惊栗::http://ssoonn.com/lists/11/searchPage/&&厨艺::http://ssoonn.com/lists/12/searchPage/&&伪娘::http://ssoonn.com/lists/13/searchPage/&&图片::http://ssoonn.com/lists/14/searchPage/&&冒险::http://ssoonn.com/lists/15/searchPage/&&小说::http://ssoonn.com/lists/19/searchPage/&&港漫::http://ssoonn.com/lists/20/searchPage/&&耽美::http://ssoonn.com/lists/21/searchPage/&&经典::http://ssoonn.com/lists/22/searchPage/&&欧美::http://ssoonn.com/lists/23/searchPage/&&日文::http://ssoonn.com/lists/24/searchPage/&&亲情::http://ssoonn.com/lists/25/searchPage/',
 
   // 搜索
 
