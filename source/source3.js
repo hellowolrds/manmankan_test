@@ -40,7 +40,7 @@ var source3 = {
   // 搜索
 
   ruleSearchAuthor: '@css:.con h3+p@text',
-  ruleSearchCid: 'tag.a@href@js:result=java.substring(result, -1);',
+  ruleSearchCid: 'tag.a@href@js:result=java.splitHref(result, -1);',
   ruleSearchCoverUrl: 'tag.img@src',
   ruleSearchList: 'class.main@class.se-list@tag.li',
   ruleSearchTitle: 'class.con@tag.h3@text',
