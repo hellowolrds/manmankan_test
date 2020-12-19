@@ -41,11 +41,11 @@ var source5 = {
   // 搜索
 
   ruleSearchAuthor: '@css:div:eq(1) > h3 > a[title]@text',
-  ruleSearchCid: '@css:div:eq(1) > h3 > strong > a@js:java.splitHref(result,1)',
+  ruleSearchCid: '@css:div:eq(1) > h3 > strong > a@text@js:java.splitHref(result,1)',
   ruleSearchCoverUrl: '@css:div:eq(0) > a > img@src',
   ruleSearchList: '@css:#comiclist > div.search_list > div.comiclist > ul > li > div',
   ruleSearchTitle: 'class.mh-works-title@tag.h4@text',
-  ruleSearchUpdate: '@css:div:eq(1) > h3 > span.fr@js:java.substring(result,7)',
+  ruleSearchUpdate: '@css:div:eq(1) > h3 > span.fr@text@js:java.substring(result,7)',
   ruleSearchUrl:
   'http://so.u17.com/all/searchKey/m0_psearchPage.html',
 
