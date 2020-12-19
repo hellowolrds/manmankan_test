@@ -28,19 +28,19 @@ var source4 = {
 
   // 推荐
 
-  ruleFindAuthor: '@css:.con h3+p@text',
-  ruleFindCid: 'class.pic@tag.a@href@js:result=java.splitHref(result, -1);',
+  ruleFindAuthor: '',
+  ruleFindCid: 'tag.a@href@js:result=result.substring(1,result.length-1);result.replace("/", "_")',
   ruleFindCoverUrl:
-  'tag.img@src',
-  ruleFindList: 'class.main@class.se-list@tag.li',
-  ruleFindTitle: 'class.con@tag.h3@text',
-  ruleFindUpdate: '',
+  'class.mh-nlook-w@tag.img@src',
+  ruleFindList: 'class.mh-search-list@tag.li',
+  ruleFindTitle: 'class.mh-works-title@tag.h4@text',
+  ruleFindUpdate: 'class.mh-works-author@text',
   ruleFindUrl:
-  '萌系::http://ssoonn.com/lists/1/searchPage/&&搞笑::http://ssoonn.com/lists/2/searchPage/&&格斗::http://ssoonn.com/lists/3/searchPage/&&科幻::http://ssoonn.com/lists/4/searchPage/&&剧情::http://ssoonn.com/lists/5/searchPage/&&侦探::http://ssoonn.com/lists/6/searchPage/&&竞技::http://ssoonn.com/lists/7/searchPage/&&魔法::http://ssoonn.com/lists/8/searchPage/&&神鬼::http://ssoonn.com/lists/9/searchPage/&&校园::http://ssoonn.com/lists/10/searchPage/&&惊栗::http://ssoonn.com/lists/11/searchPage/&&厨艺::http://ssoonn.com/lists/12/searchPage/&&伪娘::http://ssoonn.com/lists/13/searchPage/&&图片::http://ssoonn.com/lists/14/searchPage/&&冒险::http://ssoonn.com/lists/15/searchPage/&&小说::http://ssoonn.com/lists/19/searchPage/&&港漫::http://ssoonn.com/lists/20/searchPage/&&耽美::http://ssoonn.com/lists/21/searchPage/&&经典::http://ssoonn.com/lists/22/searchPage/&&欧美::http://ssoonn.com/lists/23/searchPage/&&日文::http://ssoonn.com/lists/24/searchPage/&&亲情::http://ssoonn.com/lists/25/searchPage/',
+  '全部::http://www.js518.net/all/searchPage.html&&热血::http://www.js518.net/rexueshaonian/searchPage.html&&格斗::http://www.js518.net/wuxiagedou/searchPage.html&&科幻::http://www.js518.net/kehuanmohuan/searchPage.html&&竞技::http://www.js518.net/jingjitiyu/searchPage.html&&搞笑::http://www.js518.net/gaoxiaomanhua/searchPage.html&&推理::http://www.js518.net/tuilizhentan/searchPage.html&&恐怖::http://www.js518.net/kongbulingyi/searchPage.html&&耽美::http://www.js518.net/danmeih/searchPage.html&&少女::http://www.js518.net/shaonvmanhua/searchPage.html&&恋爱::http://www.js518.net/lianaishenghuo/searchPage.html&&生活::http://www.js518.net/shenghuomanhua/searchPage.html&&战争::http://www.js518.net/zhanzhengmanhua/searchPage.html&&故事::http://www.js518.net/gushimanhua/searchPage.html&&冒险::http://www.js518.net/mxmh/searchPage.html&&魔幻::http://www.js518.net/mohuanmanhua/searchPage.html&&玄幻::http://www.js518.net/xuanhuanmanhua/searchPage.html&&校园::http://www.js518.net/xiaoyuanmanhua/searchPage.html&&悬疑::http://www.js518.net/xuanyimanhua/searchPage.html&&萌系::http://www.js518.net/mengximanhua/searchPage.html&&穿越::http://www.js518.net/chuanyuemanhua/searchPage.html&&后宫::http://www.js518.net/hougongmanhua/searchPage.html&&都市::http://www.js518.net/dushimanhua/searchPage.html&&武侠::http://www.js518.net/wuxiamanhua/searchPage.html&&历史::http://www.js518.net/lishimanhua/searchPage.html&&同人::http://www.js518.net/tongrenmanhua/searchPage.html&&励志::http://www.js518.net/lizhimanhua/searchPage.html&&百合::http://www.js518.net/baihemanhua/searchPage.html&&治愈::http://www.js518.net/zhiyumanhua/searchPage.html&&机甲::http://www.js518.net/jijiamanhua/searchPage.html&&纯爱::http://www.js518.net/chunaimanhua/searchPage.html&&美食::http://www.js518.net/meishimanhua/searchPage.html&&血腥::http://www.js518.net/xuexingmanhua/searchPage.html&&僵尸::http://www.js518.net/jiangshimanhua/searchPage.html&&恶搞::http://www.js518.net/egaomanhua/searchPage.html&&虐心::http://www.js518.net/nuexinmanhua/searchPage.html&&动作::http://www.js518.net/dongzuomanhua/searchPage.html&&惊险::http://www.js518.net/jingxianmanhua/searchPage.html&&唯美::http://www.js518.net/weimeimanhua/searchPage.html&&震撼::http://www.js518.net/zhenhanmanhua/searchPage.html&&复仇::http://www.js518.net/fuchoumanhua/searchPage.html&&侦探::http://www.js518.net/zhentanmanhua/searchPage.html&&脑洞::http://www.js518.net/naodongmanhua/searchPage.html&&奇幻::http://www.js518.net/qihuanmanhua/searchPage.html&&宫斗::http://www.js518.net/gongdoumanhua/searchPage.html&&爆笑::http://www.js518.net/baoxiaomanhua/searchPage.html&&运动::http://www.js518.net/yundongmanhua/searchPage.html&&青春::http://www.js518.net/qingchunmanhua/searchPage.html&&灵异::http://www.js518.net/lingyimanhua/searchPage.html&&古风::http://www.js518.net/gufengmanhua/searchPage.html&&权谋::http://www.js518.net/quanmoumanhua/searchPage.html&&节操::http://www.js518.net/jiecaomanhua/searchPage.html&&明星::http://www.js518.net/mingxingmanhua/searchPage.html&&暗黑::http://www.js518.net/anheimanhua/searchPage.html&&社会::http://www.js518.net/shehuimanhua/searchPage.html&&浪漫::http://www.js518.net/langmanmanhua/searchPage.html&&栏目::http://www.js518.net/lanmumanhua/searchPage.html&&仙侠::http://www.js518.net/xianxiamanhua/searchPage.html',
 
   // 搜索
 
-  ruleSearchAuthor: '',
+  ruleSearchAuthor: 'class.mh-works-tags@tag.em@text',
   ruleSearchCid: 'tag.a@href@js:result=result.substring(1,result.length-1);result.replace("/", "_")',
   ruleSearchCoverUrl: 'class.mh-nlook-w@tag.img@src',
   ruleSearchList: 'class.mh-search-list@tag.li',
