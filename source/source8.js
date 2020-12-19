@@ -23,7 +23,7 @@ var source8 = {
   'http://m.wuqimh.com/param1/param2.html',
  // /<script>var sFiles.+<\\/script>/ 要打\\两个反斜杠
   ruleComicContent:
-  'importClass(Packages.java.util.ArrayList);importClass(Packages.com.reader.comic.utils.DecryptionUtils);importPackage(Packages.org.json);importClass(Packages.com.reader.comic.utils.StringUtils);function parseImages(){var list=new ArrayList();var packed=StringUtils.match("eval(.*?)\\\\n",content,1);if(packed!=null){var result=DecryptionUtils.evalDecrypt(packed);var jsonString=StringUtils.match("\'fs\':\\\\s*(\\\\[.*?\\\\])",result,1);var array=new JSONArray(jsonString);var size=array.length();for(var i=0;i!=size;++i){var url=array.getString(i);if(url.indexOf("http://")==-1){url="http://images.lancaier.com"+url}list.add(new ImageUrl(i+1,url,false))}}return list};',
+  'importPackage(Packages.com.reader.comic.model);importClass(Packages.java.util.ArrayList);importClass(Packages.com.reader.comic.utils.DecryptionUtils);importPackage(Packages.org.json);importClass(Packages.com.reader.comic.utils.StringUtils);function parseImages(){var list=new ArrayList();var packed=StringUtils.match("eval(.*?)\\\\n",content,1);if(packed!=null){var result=DecryptionUtils.evalDecrypt(packed);var jsonString=StringUtils.match("\'fs\':\\\\s*(\\\\[.*?\\\\])",result,1);var array=new JSONArray(jsonString);var size=array.length();for(var i=0;i!=size;++i){var url=array.getString(i);if(url.indexOf("http://")==-1){url="http://images.lancaier.com"+url}list.add(new ImageUrl(i+1,url,false))}}return list};',
 
   // 推荐
 
