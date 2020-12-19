@@ -43,7 +43,7 @@ var source4 = {
   ruleSearchAuthor: '',
   ruleSearchCid: 'tag.a@href@js:result=result.substring(1,result.length-1);result.replace("/", "_")',
   ruleSearchCoverUrl: 'class.mh-nlook-w@tag.img@src',
-  ruleSearchList: 'ckass.mh-search-list@tag.li',
+  ruleSearchList: 'class.mh-search-list@tag.li',
   ruleSearchTitle: 'class.mh-works-title@tag.h4@text',
   ruleSearchUpdate: 'class.mh-works-author@text',
   ruleSearchUrl:
