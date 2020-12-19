@@ -28,7 +28,7 @@ var source4 = {
 
   // 推荐
 
-  ruleFindAuthor: '',
+  ruleFindAuthor: 'class.mh-works-tags@tag.span@text#作者：',
   ruleFindCid: 'tag.a@href@js:result=result.substring(1,result.length-1);result.replace("/", "_")',
   ruleFindCoverUrl:
   'class.mh-nlook-w@tag.img@src',
@@ -40,7 +40,7 @@ var source4 = {
 
   // 搜索
 
-  ruleSearchAuthor: '@css:.mh-works-tags em@text',
+  ruleSearchAuthor: '',
   ruleSearchCid: 'tag.a@href@js:result=result.substring(1,result.length-1);result.replace("/", "_")',
   ruleSearchCoverUrl: 'class.mh-nlook-w@tag.img@src',
   ruleSearchList: 'class.mh-search-list@tag.li',
