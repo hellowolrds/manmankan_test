@@ -5,6 +5,7 @@ var source2 = require("./source/source2");
 var source3 = require("./source/source3");
 var source4 = require("./source/source4");
 var source5 = require("./source/source5");
+var source6 = require("./source/source6");
 
 var arr = [];
 
@@ -13,6 +14,7 @@ arr.push(source2);
 arr.push(source3);
 arr.push(source4);
 arr.push(source5);
+arr.push(source6);
 
 var str = JSON.stringify(arr);
 
