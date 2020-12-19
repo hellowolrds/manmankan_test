@@ -40,7 +40,7 @@ var source6 = {
 
   // 搜索
 
-  ruleSearchAuthor: '$.Author@js:result.join(" ")',
+  ruleSearchAuthor: '$.Author',
   ruleSearchCid: '$.Url@js:result.split("/")[1]',
   ruleSearchCoverUrl: '$.Pic',
   ruleSearchList: '$.*',
