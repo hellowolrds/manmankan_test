@@ -2,11 +2,13 @@ const fs = require("fs");
 
 var source1 = require("./source/source1");
 var source2 = require("./source/source2");
+var source3 = require("./source/source3");
 
 var arr = [];
 
 arr.push(source1);
 arr.push(source2);
+arr.push(source3);
 
 var str = JSON.stringify(arr);
 
