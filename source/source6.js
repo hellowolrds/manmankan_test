@@ -16,7 +16,7 @@ var source6 = {
   ruleComicStatus: false,
   ruleComicUpdate: 'class.detail-list-title-3@text',
   ruleChapterList: '-@css:#detail-list-select-1 li',
-  ruleChapterName: '@css:.detail-list-2-info .detail-list-2-info-title@text',
+  ruleChapterName: 'tag.a@text',
   ruleChapterUrl: 'tag.a@href@js:java.splitHref(result, 0)',
 
   // 图片详情
