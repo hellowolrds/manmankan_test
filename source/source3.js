@@ -31,7 +31,7 @@ importPackage(Packages.java.lang)
 
 function parseImages() {
    var list = new ArrayList();
-   var reg = /\<script\>var sFiles.+\<\/script\>/g;
+   var reg = /<script>var sFiles.+<\\/script>/g;
    var result = content.match(reg)[0];
    result = result.replace("<script>", "").replace("</script>", "");
    eval(result);
