@@ -8,16 +8,16 @@ var source6 = {
  
   // 漫画详情
   ruleComicInfoUrl: 'http://m.dm5.com/%s/',
-  ruleComicTitle: '@css:.banner_detail_form .info .title@text',
-  ruleComicAuthor: '@css:div.banner_detail_form > div.info > p.subtitle > a@text',
+  ruleComicTitle: 'class.normal-top-title@text',
+  ruleComicAuthor: 'class.detail-main-info-author@tag.a@text',
   ruleComicCover:
-  '@css:div.banner_detail_form > div.cover > img@src',
-  ruleComicInstro: '@css:div.banner_detail_form > div.info > p.content@text',
+  '@css:.detail-main-bg@src',
+  ruleComicInstro: 'id.detail-desc@text',
   ruleComicStatus: false,
-  ruleComicUpdate: '',
-  ruleChapterList: '@css:#chapterlistload > ul  li > a',
-  ruleChapterName: 'text@js:result.split(" ")[0]',
-  ruleChapterUrl: 'href@js:java.splitHref(result, 0)',
+  ruleComicUpdate: 'class.detail-list-title-3@text',
+  ruleChapterList: '@css:#detail-list-select-1 li',
+  ruleChapterName: 'class.detail-list-2-info-title@text',
+  ruleChapterUrl: 'tag.a@href@js:java.splitHref(result, 0)',
 
   // 图片详情
   ruleContentUrl:
