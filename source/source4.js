@@ -4,27 +4,27 @@ var source4 = {
   comicSourceUrl: 'http://www.js518.net',
   enable: true,
   imgHeaders:
-  'function getHeader(){return Headers.of("Referer","http://hhaass.com/")}function getHeader2(url){return getHeader()}function getHeader3(){return getHeader()};',
+  'function getHeader(){return Headers.of("Referer","http://m.tuku.cc")}function getHeader2(url){return getHeader()}function getHeader3(){return getHeader()};',
  
   // 漫画详情
-  ruleComicInfoUrl: 'http://ssoonn.com/comic/%s/?d=123@Header:{"User-Agent": "Mozilla/5.0 (Linux; Android 4.1.1; Nexus 7 Build/JRO03D) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166  Safari/535.19"}',
-  ruleComicTitle: 'class.pic@class.con@tag.h3@text',
-  ruleComicAuthor: 'class.pic@class.con@tag.p.0@text#作者：',
+  ruleComicInfoUrl: 'http://www.js518.net/%s',
+  ruleComicTitle: 'class.mh-date-info@class.mh-date-info-name@tag.h4',
+  ruleComicAuthor: 'class.mh-pdt30@class.one@tag.em@text',
   ruleComicCover:
-  'class.pic@tag.img@src',
-  ruleComicInstro: '@css:#detail_block .ilist p@text',
+  'class.mh-date-bgpic@tag.img@src',
+  ruleComicInstro: 'id.workint@text',
   ruleComicStatus: false,
-  ruleComicUpdate: '@css:.pic .con p:last-child@text##更新日期：',
-  ruleChapterList: '@css:#sort_div_p a',
+  ruleComicUpdate: '',
+  ruleChapterList: 'id.mh-chapter-list-ol-0@tag.li',
   ruleChapterName: 'text',
-  ruleChapterUrl: 'href',
+  ruleChapterUrl: 'tag.a@href',
 
   // 图片详情
   ruleContentUrl:
-  'param2@Header:{"User-Agent": "Mozilla/5.0 (Linux; Android 4.1.1; Nexus 7 Build/JRO03D) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166  Safari/535.19"}',
+  'http://www.js518.net/param2',
  // /<script>var sFiles.+<\\/script>/ 要打\\两个反斜杠
   ruleComicContent:
-  'importClass(Packages.java.util.ArrayList);importPackage(Packages.com.reader.comic.model);importPackage(Packages.java.lang);function parseImages(){var list=new ArrayList();var reg=/<script>var sFiles.+<\\/script>/g;var result=content.match(reg)[0];result=result.replace("<script>","").replace("<\/script>","");eval(result);sFiles=unsuan(sFiles);var arrFiles=sFiles.split("|");var sDomain="http://18.125084.com/dm03/";for(var i=0;i<arrFiles.length;i++){var img=sDomain+arrFiles[i];var imageUrl=new ImageUrl(i+1,img,false);list.add(imageUrl)}return list}function unsuan(s){var sw="ssoonn.com|m.99comic.com|ssoozz.com";var su="ssoonn.com";var b=false;for(var i=0;i<sw.split("|").length;i++){if(su.indexOf(sw.split("|")[i])>-1){b=true;break}}if(!b){return""}var x=s.substring(s.length-1);var xi="abcdefghijklmnopqrstuvwxyz".indexOf(x)+1;var sk=s.substring(s.length-xi-12,s.length-xi-1);s=s.substring(0,s.length-xi-12);var k=sk.substring(0,sk.length-1);var f=sk.substring(sk.length-1);for(var i=0;i<k.length;i++){eval("s=s.replace(/"+k.substring(i,i+1)+"/g,\'"+i+"\')")}var ss=s.split(f);s="";for(var i=0;i<ss.length;i++){s+=String.fromCharCode(ss[i])}return s};',
+  'importClass(Packages.com.reader.comic.utils.StringUtils);importPackage(Packages.com.reader.comic.model);importClass(Packages.java.util.ArrayList);importClass(Packages.com.reader.comic.utils.DecryptionUtils);function parseImages(){var list=new ArrayList();var base_url="http://j.aiwenwo.net/";var data=StringUtils.match(\'qTcms_S_m_murl_e=\\"(.+)\\";\',content,1);var image_urls=DecryptionUtils.base64Decrypt(data);var temp=image_urls.split("\\$qingtiandy\\$");for(var i=0;i<temp.length;i++){var url=temp[i];list.add(new ImageUrl(i+1,base_url+url,false));i++}return list};',
 
   // 推荐
 
