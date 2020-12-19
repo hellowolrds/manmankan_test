@@ -39,7 +39,7 @@ var source3 = {
 
   // 搜索
 
-  ruleSearchAuthor: 'tag.color_red@text',
+  ruleSearchAuthor: '@css:.con h3+p@text',
   ruleSearchCid: 'tag.a@href@js:java.substring(result, -1)',
   ruleSearchCoverUrl: 'tag.img@src',
   ruleSearchList: 'class.main@class.se-list@tag.li',
