@@ -9,7 +9,7 @@ var source3 = {
   // 漫画详情
   ruleComicInfoUrl: 'http://ssoonn.com/comic/%s/?d=123@Header:{"User-Agent": "Mozilla/5.0 (Linux; Android 4.1.1; Nexus 7 Build/JRO03D) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166  Safari/535.19"}',
   ruleComicTitle: 'class.pic@class.con@tag.h3@text',
-  ruleComicAuthor: '@css:.pic .con h3 + p',
+  ruleComicAuthor: 'class.pic@class.con@tag.h3@tag.p.0',
   ruleComicCover:
   'class.pic@tag.img@src',
   ruleComicInstro: '@css:#detail_block .ilist p@text',
