@@ -9,13 +9,13 @@ var source3 = {
   // 漫画详情
   ruleComicInfoUrl: 'http://ssoonn.com/comic/%s/?d=123@Header:{"User-Agent": "Mozilla/5.0 (Linux; Android 4.1.1; Nexus 7 Build/JRO03D) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166  Safari/535.19"}',
   ruleComicTitle: 'class.pic@class.con@tag.h3@text',
-  ruleComicAuthor: '@css:.pic .con h3 + p@text##作者：',
+  ruleComicAuthor: '@css:.pic .con h3 + p##作者：',
   ruleComicCover:
   'class.pic@tag.img@src',
   ruleComicInstro: '@css:#detail_block .ilist p@text',
   ruleComicStatus: false,
   ruleComicUpdate: '@css:.pic .con p:last-child@text##更新日期：',
-  ruleChapterList: 'id.sort_div_p@tag.a',
+  ruleChapterList: '@css:#sort_div_p a',
   ruleChapterName: 'text',
   ruleChapterUrl: 'href',
 
@@ -40,7 +40,7 @@ var source3 = {
   // 搜索
 
   ruleSearchAuthor: '@css:.con h3+p@text',
-  ruleSearchCid: 'tag.a@href@js:java.substring(result, -1)',
+  ruleSearchCid: 'tag.a@href@js:result=java.substring(result, -1);result.replace(".0", "")',
   ruleSearchCoverUrl: 'tag.img@src',
   ruleSearchList: 'class.main@class.se-list@tag.li',
   ruleSearchTitle: 'class.con@tag.h3@text',
