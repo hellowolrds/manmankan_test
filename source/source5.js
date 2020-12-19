@@ -45,7 +45,7 @@ var source5 = {
   ruleSearchCoverUrl: '@css:div:eq(0) > a > img@src',
   ruleSearchList: '@css:#comiclist > div.search_list > div.comiclist > ul > li > div',
   ruleSearchTitle: '@css:div:eq(1) > h3 > strong > a@title',
-  ruleSearchUpdate: '@css:div:eq(1) > h3 > span.fr@text@js:java.substring(result,7)',
+  ruleSearchUpdate: '@css:div:eq(1) > h3 > span.fr@text@js:result=java.substring(result,7)',
   ruleSearchUrl:
   'http://so.u17.com/all/searchKey/m0_psearchPage.html',
 
