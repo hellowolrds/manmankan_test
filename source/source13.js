@@ -29,7 +29,7 @@ var source13 = {
   // 推荐
 
   ruleFindAuthor: '',
-  ruleFindCid: '@css:a.vbox_t@href@js:java.splitHref(result, 1);',
+  ruleFindCid: '@css:li.title > a@href@js:java.splitHref(result, 1);',
   ruleFindCoverUrl:
   '@css:a.pic > img@src',
   ruleFindList: '@css:.cy_list_mh > ul',
