@@ -14,7 +14,7 @@ var source17 = {
   ruleComicInstro: '@css:p.comic_story@text',
   ruleComicStatus: false,
   ruleComicLianZai: '@css:a.comic-pub-state@text',
-  ruleComicUpdate: '@css:a.comic-pub-end-date',
+  ruleComicUpdate: '@css:a.comic-pub-date',
   ruleChapterList: '-@css:#comic-book-list > div > ol > li > a',
   ruleChapterName: 'text',
   ruleChapterUrl: 'tag.a@href@js:java.splitHref(result, 2)',
