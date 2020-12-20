@@ -6,7 +6,7 @@ var source10 = {
   'function getHeader(){return Headers.of("Referer","https://www.mh160.xyz/")}function getHeader2(url){return getHeader()}function getHeader3(){return getHeader()};',
  
   // 漫画详情
-  ruleComicInfoUrl: 'https://www.krmanhua.com/manhua/%s',
+  ruleComicInfoUrl: 'https://www.krmanhua.com/manhua/%s/',
   ruleComicTitle: '@css:.book-detail .book-title h1@text',
   ruleComicAuthor: '@css:.book-detail .detail-list li:eq(1) span:last-child a@text',
   ruleComicCover:
