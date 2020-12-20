@@ -20,7 +20,7 @@ var source10 = {
 
   // 图片详情
   ruleContentUrl:
-  'http://www.krmanhua.comparam2@Header{"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.183 Safari/537.36"}',
+  'http://www.krmanhua.comparam2?Header{"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.183 Safari/537.36"}',
  // /<script>var sFiles.+<\\/script>/ 要打\\两个反斜杠
   ruleComicContent:
   ` importClass(Packages.java.util.ArrayList)importPackage(Packages.com.reader.comic.model)importClass(Packages.com.reader.comic.utils.StringUtils)importClass(Packages.com.reader.comic.utils.DecryptionUtils)function parseImages() {var list = new ArrayList();var base_url = "http://pic1.krmanhua.com:8001/";var jpg_root = StringUtils.match("chapterPath = (.+)\\";var pageTitle ", content, 1);var jpg_list = StringUtils.match("var chapterImages = (.+)];", content, 1);jpg_root = jpg_root.replace("\\"", "");jpg_list = jpg_list.replace("[", "");var arr = jpg_list.split(",");for (var i = 0; i < arr.length; i ++) {var url = arr[i];url = url.replace("\\"", "").replace("\\"", "");var s = base_url + jpg_root + url;Log.d("jpg_list", "parseImages: "+s);list.add(new ImageUrl(i+1, s,false));i++;}return list;}`,
