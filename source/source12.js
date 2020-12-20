@@ -14,7 +14,7 @@ var source12 = {
   '@css:.comic-cover img@data-src@js:"http:"+result',
   ruleComicInstro: 'id.js_desc_content@text',
   ruleComicStatus: false,
-  ruleComicUpdate: '@css:.comic-update-time@text',
+  ruleComicUpdate: '@css:.comic-update-time@text@js:result.replace("最后更新","")',
   ruleChapterList: '-@css:#js_chapter_list > li',
   ruleChapterName: 'class.name@text',
   ruleChapterUrl: 'tag.a@href',
@@ -23,7 +23,7 @@ var source12 = {
   ruleContentUrl:
   'https://m.feimh8.comparam2',
   ruleComicContent:
-  'importClass(Packages.java.util.ArrayList);importPackage(Packages.com.reader.comic.model);importClass(Packages.com.reader.comic.utils.StringUtils);function parseImages(){var list=new ArrayList();var comic=StringUtils.match("current_chapter:(.*),prev",content,1);var jsonObject=new JSONObject(comic);var start_num=jsonObject.getInt("start_num");var end_num=jsonObject.getInt("end_num");var format=jsonObject.getString("rule");var base_url=jsonObject.getString("chapter_domain");for(var i=1;i<=end_num;i++){var url="https://"+base_url+"/"+format.replace("$$",i+"")+"-kmh.low.webp";list.add(new ImageUrl(i,url,false))}return list};',
+  'importPackage(Packages.org.json);importClass(Packages.java.util.ArrayList);importPackage(Packages.com.reader.comic.model);importClass(Packages.com.reader.comic.utils.StringUtils);function parseImages(){var list=new ArrayList();var comic=StringUtils.match("current_chapter:(.*),prev",content,1);var jsonObject=new JSONObject(comic);var start_num=jsonObject.getInt("start_num");var end_num=jsonObject.getInt("end_num");var format=jsonObject.getString("rule");var base_url=jsonObject.getString("chapter_domain");for(var i=1;i<=end_num;i++){var url="https://"+base_url+"/"+format.replace("$$",i+"")+"-kmh.low.webp";list.add(new ImageUrl(i,url,false))}return list};',
 
   // 推荐
 
