@@ -7,7 +7,7 @@ var source20 = {
   'function getHeader(){return Headers.of("Referer","http://m.buka.cn")}function getHeader2(url){return getHeader()}function getHeader3(){return getHeader()};',
  
   // 漫画详情
-  ruleComicInfoUrl: 'http://m.buka.cn/m/%s?Header{"user-agent":"Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1"}',
+  ruleComicInfoUrl: 'http://m.buka.cn/m/%s?Header{"User-Agent":"Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1"}',
   ruleComicTitle: '@css:p.mangadir-glass-name@text',
   ruleComicAuthor: '@css:.mangadir-glass-author@text',
   ruleComicCover:
