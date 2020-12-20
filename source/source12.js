@@ -4,7 +4,7 @@ var source12 = {
   comicSourceUrl: 'https://m.feimh8.com',
   enable: true,
   imgHeaders:
-  'function getHeader(){return Headers.of("Referer","http://m.dmzj.com/")}function getHeader2(url){return getHeader()}function getHeader3(){return getHeader()};',
+  'function getHeader(){return Headers.of("Referer","http://m.ccmh6.com/")}function getHeader2(url){return getHeader()}function getHeader3(){return getHeader()};',
  
   // 漫画详情
   ruleComicInfoUrl: 'https://m.feimh8.com/%s/',
