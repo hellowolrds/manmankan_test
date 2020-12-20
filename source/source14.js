@@ -29,7 +29,7 @@ var source14 = {
   // 推荐
 
   ruleFindAuthor: '',
-  ruleFindCid: '@css:.ImgA@href:java.splitHref(result, -1);',
+  ruleFindCid: '@css:.ImgA@href@js:java.splitHref(result, -1);',
   ruleFindCoverUrl:
   '@css:.ImgA mip-img@src',
   ruleFindList: '@css:#w0 .col_3_1 > .list-comic',
