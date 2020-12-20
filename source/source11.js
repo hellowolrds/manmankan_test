@@ -28,7 +28,7 @@ var source11 = {
   // 推荐
 
   ruleFindAuthor: '',
-  ruleFindCid: '@css:a.vbox_t@href@js:java.splitHref(result, -1);',
+  ruleFindCid: '@css:a.vbox_t@href@js:java.splitHref(result, 1);',
   ruleFindCoverUrl:
   '@css:a.vbox_t > mip-img@src',
   ruleFindList: '@css:.tbox_m > li',
