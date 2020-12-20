@@ -35,7 +35,7 @@ var source10 = {
   ruleFindTitle: '@css:.ell a@text',
   ruleFindUpdate: 'class.tt@text',
   ruleFindUrl:
-  '全部::http://www.krmanhua.com/list_searchPage&&儿童漫画::http://www.krmanhua.com/list/ertong/searchPage/&&少年漫画::http://www.krmanhua.com/list/shaonian/searchPage/&&少女漫画::http://www.krmanhua.com/list/shaonv/searchPage/&&青年漫画::http://www.krmanhua.com/list/qingnian/searchPage/',
+  '全部::http://www.krmanhua.com/list_searchPage/&&儿童漫画::http://www.krmanhua.com/list/ertong/searchPage/&&少年漫画::http://www.krmanhua.com/list/shaonian/searchPage/&&少女漫画::http://www.krmanhua.com/list/shaonv/searchPage/&&青年漫画::http://www.krmanhua.com/list/qingnian/searchPage/',
 
   // 搜索
 
