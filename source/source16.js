@@ -47,7 +47,7 @@ var source16 = {
   ruleSearchTitle: '@css:.ell a@text',
   ruleSearchUpdate: '@css:.tt@text',
   ruleSearchUrl:
-  'http://www.manhuatt.com/statics/search.aspx?key=searchKey&page=searchPage',
+  'https://www.diya1.com/search/?keywords=searchKey&page=searchPage',
 
 
   sort: '16',
