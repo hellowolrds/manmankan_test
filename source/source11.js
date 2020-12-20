@@ -44,7 +44,7 @@ var source11 = {
   ruleSearchCoverUrl: '@css:a.vbox_t > mip-img@src',
   ruleSearchList: '@css:ul.tbox_m > li.vbox',
   ruleSearchTitle: '@css:a.vbox_t@title',
-  ruleSearchUpdate: '@css:h4:eq(2)@text',
+  ruleSearchUpdate: '@css:span@text',
   ruleSearchUrl:
   'https://m.bnmanhua.com/search/searchKey/searchPage.html?Header{"Referer":"https://m.bnmanhua.com/","Host":"m.bnmanhua.com"}',
 
