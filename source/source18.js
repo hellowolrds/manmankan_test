@@ -44,7 +44,7 @@ var source18 = {
   ruleSearchCoverUrl: '$.comic_id@js:"https://image.yqmh.com/mh/" + result + ".jpg-300x400.webp"',
   ruleSearchList: '$.data.data.*',
   ruleSearchTitle: '$.comic_name',
-  ruleSearchUpdate: '',
+  ruleSearchUpdate: '$.last_chapter_name',
   ruleSearchUrl:
   'https://m.manhuatai.com/api/getsortlist/?product_id=2&productname=mht&platformname=wap&orderby=click&search_key=searchKet&page=searchPage&size=48',
 
