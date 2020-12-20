@@ -46,7 +46,7 @@ var source12 = {
   ruleSearchTitle: '$.comic_name',
   ruleSearchUpdate: '$.last_chapter_name',
   ruleSearchUrl:
-  'https://m.feimh8.com/api/getsortlist/?page=searchPage&comic_sort=&orderby=click&search_key=seachKey&size=48',
+  'https://m.feimh8.com/api/getsortlist/?page=searchPage&comic_sort=&orderby=click&search_key=searchKey&size=48',
 
 
   sort: '12',
