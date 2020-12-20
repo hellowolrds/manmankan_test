@@ -30,7 +30,7 @@ var source12 = {
   ruleFindAuthor: '',
   ruleFindCid: '$.comic_newid',
   ruleFindCoverUrl:
-  '$.comic_id@js:"http://cover.feimh8.com/mh/"+result+"jpg-300x400.jpg"',
+  '$.comic_id@js:"http://cover.feimh8.com/mh/"+result+".jpg-300x400.jpg"',
   ruleFindList: '$.data.data.*',
   ruleFindTitle: '$.comic_name',
   ruleFindUpdate: '$.last_chapter_name',
@@ -41,7 +41,7 @@ var source12 = {
 
   ruleSearchAuthor: '',
   ruleSearchCid: '$.comic_newid',
-  ruleSearchCoverUrl: '$.comic_id@js:"http://cover.feimh8.com/mh/"+result+"jpg-300x400.jpg"',
+  ruleSearchCoverUrl: '$.comic_id@js:"http://cover.feimh8.com/mh/"+result+".jpg-300x400.jpg"',
   ruleSearchList: '$.data.data.*',
   ruleSearchTitle: '$.comic_name',
   ruleSearchUpdate: '$.last_chapter_name',
