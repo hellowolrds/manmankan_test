@@ -46,7 +46,7 @@ var source20 = {
   ruleSearchTitle: '$.comic_name',
   ruleSearchUpdate: '$.last_chapter_name',
   ruleSearchUrl:
-  '@js:"http://m.buka.cn/search/ajax_search@key="+searchKey+"&start="+15*(searchPage-1)+"&count=15"',
+  '@js:"http://m.buka.cn/search/ajax_search@key=\""+searchKey+"\"&start="+15*(searchPage-1)+"&count=15"',
 
 
   sort: '20',
