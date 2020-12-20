@@ -8,7 +8,7 @@ var source13 = {
   // 漫画详情
   ruleComicInfoUrl: 'https://tuhao456.com/manhua/%s/',
   ruleComicTitle: '@css:div.cy_title > h1@text',
-  ruleComicAuthor: '@css:div.cy_xinxi > span:eq(0)@text',
+  ruleComicAuthor: '@css:div.cy_xinxi > span:eq(0)@text@js:result.replace("作者：","");',
   ruleComicCover:
   '@css:img.pic@src',
   ruleComicInstro: '@css:p#comic-description@text',
@@ -21,7 +21,7 @@ var source13 = {
 
   // 图片详情
   ruleContentUrl:
-  'https://tuhao456.com/chapter/%s.html',
+  'https://tuhao456.com/chapter/param2.html',
  // /<script>var sFiles.+<\\/script>/ 要打\\两个反斜杠
   ruleComicContent:
   `importClass(Packages.java.util.ArrayList);importPackage(Packages.com.reader.comic.model);importClass(Packages.com.reader.comic.utils.StringUtils);function parseImages(){var list=new ArrayList();var str=StringUtils.match('\\"page_url\\":\\"(.*?)\\",',content,1);var arr=str.split("\\\\|72cms\\\\|");for(var i=0;i<arr.length;i++){var url=arr[i];list.add(new ImageUrl(i+1,url,false))}return list};`,
