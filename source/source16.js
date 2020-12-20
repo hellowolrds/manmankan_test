@@ -15,7 +15,7 @@ var source16 = {
   ruleComicStatus: false,
   ruleComicLianZai: '',
   ruleComicUpdate: '@css:.book-detail .detail-list li:eq(2) span:last-child a@text',
-  ruleChapterList: '-@css:#chapter-list-1 li',
+  ruleChapterList: '@css:#chapter-list-1 li',
   ruleChapterName: 'text',
   ruleChapterUrl: 'tag.a@href',
 
