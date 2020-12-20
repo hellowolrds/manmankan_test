@@ -4,49 +4,49 @@ var source20 = {
   comicSourceUrl: 'https://m.feimh8.com',
   enable: true,
   imgHeaders:
-  'function getHeader(){return Headers.of("user-agent","Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1")}function getHeader2(url){return getHeader()}function getHeader3(){return getHeader()};',
+  'function getHeader(){return Headers.of("Referer","http://m.buka.cn")}function getHeader2(url){return getHeader()}function getHeader3(){return getHeader()};',
  
   // 漫画详情
-  ruleComicInfoUrl: 'https://m.feimh8.com/%s/',
-  ruleComicTitle: 'class.header-title@text',
-  ruleComicAuthor: '',
+  ruleComicInfoUrl: 'http://m.buka.cn/m/%s?Header{"user-agent":"Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1"}',
+  ruleComicTitle: '@css:p.mangadir-glass-name@text',
+  ruleComicAuthor: '@css:.mangadir-glass-author@text',
   ruleComicCover:
-  '@css:.comic-cover img@data-src@js:"http:"+result',
-  ruleComicInstro: 'id.js_desc_content@text',
+  '@css:.mangadir-glass-img > img@src',
+  ruleComicInstro: '@css:span.description_intro@text',
   ruleComicStatus: false,
-  ruleComicUpdate: '@css:.comic-update-time@text@js:result.replace("最新更新","")',
-  ruleChapterList: '-@css:#js_chapter_list > li',
-  ruleChapterName: 'class.name@text',
-  ruleChapterUrl: 'tag.a@href',
+  ruleComicUpdate: '@css:span.top-title-right@text',
+  ruleChapterList: '-@css:div.chapter-center > a',
+  ruleChapterName: 'text',
+  ruleChapterUrl: 'href@js:java.splitHref(result,-1)',
 
   // 图片详情
   ruleContentUrl:
-  'https://m.feimh8.comparam2',
+  'http://m.buka.cn/read/param1/param2?Header{"user-agent":"Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1"}',
   ruleComicContent:
-  'importPackage(Packages.org.json);importClass(Packages.java.util.ArrayList);importPackage(Packages.com.reader.comic.model);importClass(Packages.com.reader.comic.utils.StringUtils);function parseImages(){var list=new ArrayList();var comic=StringUtils.match("current_chapter:(.*),prev",content,1);var jsonObject=new JSONObject(comic);var start_num=jsonObject.getInt("start_num");var end_num=jsonObject.getInt("end_num");var format=jsonObject.getString("rule");var base_url=jsonObject.getString("chapter_domain");for(var i=1;i<=end_num;i++){var url="https://"+base_url+"/"+format.replace("$$",i+"")+"-kmh.low.webp";list.add(new ImageUrl(i,url,false))}return list};',
+  'importClass(Packages.java.util.ArrayList);importPackage(Packages.com.reader.comic.model);importPackage(Packages.java.lang);function parseImages(){var list=new ArrayList();var m=Pattern.compile(\'<img class=\\"lazy\\" data-original=\\"(http.*?jpg)\\" />\').matcher(content);if(m.find()){var i=0;do{list.add(new ImageUrl(++i,StringUtils.match("http.*jpg",m.group(0),0),false))}while(m.find())}return list};',
 
   // 推荐
 
-  ruleFindAuthor: '',
-  ruleFindCid: '$.comic_newid',
+  ruleFindAuthor: '$.author',
+  ruleFindCid: '$.mid',
   ruleFindCoverUrl:
-  '$.comic_id@js:"http://cover.feimh8.com/mh/"+result+".jpg-300x400.jpg"',
-  ruleFindList: '$.data.data.*',
-  ruleFindTitle: '$.comic_name',
-  ruleFindUpdate: '$.last_chapter_name',
+  '$.logo',
+  ruleFindList: '$.datas.items.*',
+  ruleFindTitle: '$.name',
+  ruleFindUpdate: '',
   ruleFindUrl:
-  '热血::https://m.feimh8.com/api/getsortlist/?page=searchPage&comic_sort=rexue&type=4&size=48&&机战::https://m.feimh8.com/api/getsortlist/?page=searchPage&comic_sort=jizhan&type=4&size=48&&运动::https://m.feimh8.com/api/getsortlist/?page=searchPage&comic_sort=yundong&type=4&size=48&&推理::https://m.feimh8.com/api/getsortlist/?page=searchPage&comic_sort=tuili&type=4&size=48&&冒险::https://m.feimh8.com/api/getsortlist/?page=searchPage&comic_sort=maoxian&type=4&size=48&&耽美::https://m.feimh8.com/api/getsortlist/?page=searchPage&comic_sort=liaomei&type=4&size=48&&百合::https://m.feimh8.com/api/getsortlist/?page=searchPage&comic_sort=baihe&type=4&size=48&&搞笑::https://m.feimh8.com/api/getsortlist/?page=searchPage&comic_sort=gaoxiao&type=4&size=48&&战争::https://m.feimh8.com/api/getsortlist/?page=searchPage&comic_sort=zhanzhen&type=4&size=48&&神魔::https://m.feimh8.com/api/getsortlist/?page=searchPage&comic_sort=shenmo&type=4&size=48&&忍者::https://m.feimh8.com/api/getsortlist/?page=searchPage&comic_sort=renzhe&type=4&size=48&&竞技::https://m.feimh8.com/api/getsortlist/?page=searchPage&comic_sort=jingji&type=4&size=48&&悬疑::https://m.feimh8.com/api/getsortlist/?page=searchPage&comic_sort=xuanyi&type=4&size=48&&社会::https://m.feimh8.com/api/getsortlist/?page=searchPage&comic_sort=shehui&type=4&size=48&&恋爱::https://m.feimh8.com/api/getsortlist/?page=searchPage&comic_sort=lianai&type=4&size=48&&宠物::https://m.feimh8.com/api/getsortlist/?page=searchPage&comic_sort=chongwu&type=4&size=48&&吸血::https://m.feimh8.com/api/getsortlist/?page=searchPage&comic_sort=xixue&type=4&size=48&&萝莉::https://m.feimh8.com/api/getsortlist/?page=searchPage&comic_sort=luoli&type=4&size=48&&后宫::https://m.feimh8.com/api/getsortlist/?page=searchPage&comic_sort=hougong&type=4&size=48&&御姐::https://m.feimh8.com/api/getsortlist/?page=searchPage&comic_sort=yujie&type=4&size=48&&霸总::https://m.feimh8.com/api/getsortlist/?page=searchPage&comic_sort=bazong&type=4&size=48&&玄幻::https://m.feimh8.com/api/getsortlist/?page=searchPage&comic_sort=xuanhuan&type=4&size=48&&古风::https://m.feimh8.com/api/getsortlist/?page=searchPage&comic_sort=gufeng&type=4&size=48&&历史::https://m.feimh8.com/api/getsortlist/?page=searchPage&comic_sort=lishi&type=4&size=48&&漫改::https://m.feimh8.com/api/getsortlist/?page=searchPage&comic_sort=mangai&type=4&size=48&&游戏::https://m.feimh8.com/api/getsortlist/?page=searchPage&comic_sort=youxi&type=4&size=48&&穿越::https://m.feimh8.com/api/getsortlist/?page=searchPage&comic_sort=chuanyue&type=4&size=48&&恐怖::https://m.feimh8.com/api/getsortlist/?page=searchPage&comic_sort=kongbu&type=4&size=48&&真人::https://m.feimh8.com/api/getsortlist/?page=searchPage&comic_sort=zhenren&type=4&size=48&&科幻::https://m.feimh8.com/api/getsortlist/?page=searchPage&comic_sort=kehuan&type=4&size=48&&都市::https://m.feimh8.com/api/getsortlist/?page=searchPage&comic_sort=dushi&type=4&size=48&&武侠::https://m.feimh8.com/api/getsortlist/?page=searchPage&comic_sort=wuxia&type=4&size=48&&修真::https://m.feimh8.com/api/getsortlist/?page=searchPage&comic_sort=xiuzhen&type=4&size=48&&生活::https://m.feimh8.com/api/getsortlist/?page=searchPage&comic_sort=shenghuo&type=4&size=48&&动作::https://m.feimh8.com/api/getsortlist/?page=searchPage&comic_sort=dongzuo&type=4&size=48&&防疫::https://m.feimh8.com/api/getsortlist/?page=searchPage&comic_sort=fangyi&type=4&size=48',
+  `今日热榜::@js:'http://m.buka.cn/category/ajax_group@fun=1&count=15&param=10018&gname=今日热榜&start='+(searchPage-1)*15&&已完结::@js:'http://m.buka.cn/category/ajax_group@fun=1&count=15&param=12022&gname=已完结&start='+(searchPage-1)*15&&高分精选::@js:'http://m.buka.cn/category/ajax_group@fun=1&count=15&param=12064&gname=高分精选&start='+(searchPage-1)*15&& 最近上新::@js:'http://m.buka.cn/category/ajax_group@fun=1&count=15&param=12084&gname=最近上新&start='+(searchPage-1)*15&&日韩::@js:'http://m.buka.cn/category/ajax_group@fun=1&count=15&param=12053&gname=日韩&start='+(searchPage-1)*15&&经典::@js:'http://m.buka.cn/category/ajax_group@fun=1&count=15&param=303&gname=经典&start='+(searchPage-1)*15&&联合出品::@js:'http://m.buka.cn/category/ajax_group@fun=1&count=15&param=12033&gname=联合出品&start='+(searchPage-1)*15&&条漫::@js:'http://m.buka.cn/category/ajax_group@fun=1&count=15&param=036&gname=条漫&start='+(searchPage-1)*15&&玄幻::@js:'http://m.buka.cn/category/ajax_group@fun=1&count=15&param=12041&gname=玄幻&start='+(searchPage-1)*15&&都市恋爱::@js:'http://m.buka.cn/category/ajax_group@fun=1&count=15&param=12116&gname=都市恋爱&start='+(searchPage-1)*15&&恋爱::@js:'http://m.buka.cn/category/ajax_group@fun=1&count=15&param=404&gname=恋爱&start='+(searchPage-1)*15&&游戏::@js:'http://m.buka.cn/category/ajax_group@fun=1&count=15&param=12018&gname=游戏&start='+(searchPage-1)*15&&治愈::@js:'http://m.buka.cn/category/ajax_group@fun=1&count=15&param=202&gname=治愈&start='+(searchPage-1)*15&&科幻::@js:'http://m.buka.cn/category/ajax_group@fun=1&count=15&param=403&gname=科幻&start='+(searchPage-1)*15&&搞笑::@js:'http://m.buka.cn/category/ajax_group@fun=1&count=15&param=10008&gname=搞笑&start='+(searchPage-1)*15&&架空::@js:'http://m.buka.cn/category/ajax_group@fun=1&count=15&param=211&gname=架空&start='+(searchPage-1)*15&&励志::@js:'http://m.buka.cn/category/ajax_group@fun=1&count=15&param=12023&gname=励志&start='+(searchPage-1)*15&&格斗::@js:'http://m.buka.cn/category/ajax_group@fun=1&count=15&param=410&gname=格斗&start='+(searchPage-1)*15&&少女漫::@js:'http://m.buka.cn/category/ajax_group@fun=1&count=15&param=12103&gname=少女漫&start='+(searchPage-1)*15&&少年漫::@js:'http://m.buka.cn/category/ajax_group@fun=1&count=15&param=12104&gname=少年漫&start='+(searchPage-1)*15&&真人漫::@js:'http://m.buka.cn/category/ajax_group@fun=1&count=15&param=12117&gname=真人漫&start='+(searchPage-1)*15`,
 
   // 搜索
 
-  ruleSearchAuthor: '',
-  ruleSearchCid: '$.comic_newid',
-  ruleSearchCoverUrl: '$.comic_id@js:"http://cover.feimh8.com/mh/"+result+".jpg-300x400.jpg"',
-  ruleSearchList: '$.data.data.*',
-  ruleSearchTitle: '$.comic_name',
-  ruleSearchUpdate: '$.last_chapter_name',
+  ruleSearchAuthor: '@css:.manga-author@text',
+  ruleSearchCid: '@css:.manga-img@href@js:java.splitHref(result,-1)',
+  ruleSearchCoverUrl: '@css:.manga-img img@src',
+  ruleSearchList: '@css:.manga-list ul li',
+  ruleSearchTitle: '@css:.manga-names .manga-name@text',
+  ruleSearchUpdate: '@css:.manga-update@text',
   ruleSearchUrl:
-  '@js:"http://m.buka.cn/search/ajax_search@key=\""+searchKey+"\"&start="+15*(searchPage-1)+"&count=15"',
+  '!http://www.buka.cn/search?word=searchKey',
 
 
   sort: '20',
