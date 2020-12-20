@@ -31,7 +31,7 @@ var source10 = {
   ruleFindCid: '@css:.ell a@href@js:java.splitHref(result, -1)',
   ruleFindCoverUrl:
   'tag.img@src',
-  ruleFindList: '@css:.#contList .item-lg',
+  ruleFindList: '@css:#contList .item-lg',
   ruleFindTitle: '@css:.ell a@text',
   ruleFindUpdate: 'class.tt@text',
   ruleFindUrl:
