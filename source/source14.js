@@ -15,7 +15,7 @@ var source14 = {
   ruleComicStatus: false,
   ruleComicLianZai: '',
   ruleComicUpdate: 'div.pic > dl:eq(4) > dd',
-  ruleChapterList: '!@css:ul[id^=chapter-list] > li > a',
+  ruleChapterList: '-@css:ul[id^=chapter-list] > li > a',
   ruleChapterName: 'text',
   ruleChapterUrl: 'tag.a@href@js:java.splitHref(result,2)',
 
