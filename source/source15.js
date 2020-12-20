@@ -41,7 +41,7 @@ var source15 = {
   // 搜索
 
   ruleSearchAuthor: '',
-  ruleSearchCid: 'tag.a@href@js:result=result.substring(1,result.length-1);result=result.replace("/","_")',
+  ruleSearchCid: '@css:.mh-nlook-w a@href@js:result=result.substring(1,result.length-1);result=result.replace("/","_")',
   ruleSearchCoverUrl: '@css:.mh-nlook-w img@src',
   ruleSearchList: '@css:.mh-search-list > li',
   ruleSearchTitle: '@css:.mh-works-title h4@text',
