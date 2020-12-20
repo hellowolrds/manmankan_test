@@ -14,7 +14,7 @@ var source12 = {
   '@css:.comic-cover img@data-src@js:"http:"+result',
   ruleComicInstro: 'id.js_desc_content@text',
   ruleComicStatus: false,
-  ruleComicUpdate: '@css:.comic-update-time@text@js:result.replace("最后更新","")',
+  ruleComicUpdate: '@css:.comic-update-time@text@js:result.replace("最新更新","")',
   ruleChapterList: '-@css:#js_chapter_list > li',
   ruleChapterName: 'class.name@text',
   ruleChapterUrl: 'tag.a@href',
