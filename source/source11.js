@@ -8,12 +8,12 @@ var source11 = {
   // 漫画详情
   ruleComicInfoUrl: 'http://m.bnmanhua.com/comic/%s.html',
   ruleComicTitle: '@css:div.dbox > div.data > h4@text',
-  ruleComicAuthor: '@css:div.dbox > div.data > p.dir@text@js:result.substring(3,result.length)',
+  ruleComicAuthor: '@css:div.dbox > div.data > p.dir@text',
   ruleComicCover:
   '@css:div.dbox > div.img > mip-img@src',
   ruleComicInstro: '@css:div.tbox_js@text',
   ruleComicStatus: false,
-  ruleComicUpdate: '@css:span.list_item@text@js:result.substring(3,13);',
+  ruleComicUpdate: '@css:span.list_item@text',
   ruleChapterList: '@css:div.tabs_block > ul > li > a',
   ruleChapterName: 'text',
   ruleChapterUrl: 'tag.a@href@js:java.splitHref(result,2)',
