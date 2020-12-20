@@ -40,7 +40,7 @@ var source11 = {
   // 搜索
 
   ruleSearchAuthor: '',
-  ruleSearchCid: '@css:a.vbox_t@href@js:java.splitHref(result, -1);',
+  ruleSearchCid: '@css:a.vbox_t@href@js:java.splitHref(result, 1);',
   ruleSearchCoverUrl: '@css:a.vbox_t > mip-img@src',
   ruleSearchList: '@css:ul.tbox_m > li.vbox',
   ruleSearchTitle: '@css:a.vbox_t@title',
