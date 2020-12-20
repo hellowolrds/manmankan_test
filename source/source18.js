@@ -14,7 +14,7 @@ var source18 = {
   '@css:div.detail-cover > img@data-src@js:"https:"+result',
   ruleComicInstro: '@css:div#js_comciDesc > p.desc-content@text',
   ruleComicStatus: false,
-  ruleComicUpdate: '@css:span.update@js:result.substring(0,10)',
+  ruleComicUpdate: '@css:span.update@text@js:result.substring(0,10)',
   ruleChapterList: '@css:ol#j_chapter_list > li > a',
   ruleChapterName: 'title',
   ruleChapterUrl: 'href@js:java.splitHref(result, 1)',
