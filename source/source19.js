@@ -47,7 +47,7 @@ var source19 = {
   ruleSearchTitle: 'tag.h3@text',
   ruleSearchUpdate: '@css:dl:eq(4) > dd@text',
   ruleSearchUrl:
-  '+http://m.pufei8.com/e/search/?searchget=1&tbname=mh&show=title,player,playadmin,bieming,pinyin,playadmin&tempid=4&keyboard=searchKey&page=searchPage|char=escape',
+  '+http://m.pufei8.com/e/search/?searchget=1&tbname=mh&show=title,player,playadmin,bieming,pinyin,playadmin&tempid=4&keyboard=searchKey&page=searchPage|char=unescape',
 
 
   sort: '19',
