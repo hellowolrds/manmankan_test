@@ -4,7 +4,7 @@ var source12 = {
   comicSourceUrl: 'https://m.feimh8.com',
   enable: true,
   imgHeaders:
-  'function getHeader(){return Headers.of("Referer","http://m.ccmh6.com/")}function getHeader2(url){return getHeader()}function getHeader3(){return getHeader()};',
+  'function getHeader(){return Headers.of("user-agent","Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1")}function getHeader2(url){return getHeader()}function getHeader3(){return getHeader()};',
  
   // 漫画详情
   ruleComicInfoUrl: 'https://m.feimh8.com/%s/',
