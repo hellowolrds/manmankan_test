@@ -15,7 +15,7 @@ var source18 = {
   ruleComicInstro: '@css:div#js_comciDesc > p.desc-content@text',
   ruleComicStatus: false,
   ruleComicUpdate: '@css:span.update@text@js:result.substring(0,10)',
-  ruleChapterList: '@css:ol#j_chapter_list > li > a',
+  ruleChapterList: '-@css:ol#j_chapter_list > li > a',
   ruleChapterName: 'title',
   ruleChapterUrl: 'href@js:java.splitHref(result, 1)',
 
