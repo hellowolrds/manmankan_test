@@ -9,12 +9,12 @@ var source32 = {
   // 漫画详情
   ruleComicInfoUrl: 'http://m.6mh7.com/%s/?@Header:{"user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1"}',
   ruleComicTitle: '@css:h1.cartoon-title@text',
-  ruleComicAuthor: '@css:.author@text',
+  ruleComicAuthor: '',
   ruleComicCover:
   '@css:.banner>.cartoon-poster@src',
   ruleComicInstro: '@css:.introduction@text',
   ruleComicStatus: false,
-  ruleComicUpdate: '@css:#js_read_catalog .update-time@text',
+  ruleComicUpdate: '@css:.author@text@js:result.replace("作者：","")',
   ruleChapterList: '@css:#chapter-list1 a',
   ruleChapterName: 'text',
   ruleChapterUrl: 'href',
