@@ -18,9 +18,7 @@ var source35 = {
   ruleChapterList: '@css:#chapterList_ul_2 li',
   ruleChapterName: '@css:a@text',
   ruleChapterUrl: '@css:a@href',
-  ruleChapterAjax: `
-
-  `,
+  ruleChapterAjax: ``,
 
   // 图片详情
   ruleContentUrl:
