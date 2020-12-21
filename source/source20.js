@@ -9,12 +9,12 @@ var source20 = {
   // 漫画详情
   ruleComicInfoUrl: 'http://www.buka.cn/detail/%s?Header{"User-Agent":"Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1","Host":"m.buka.cn"}',
   ruleComicTitle: '@css:h1.title-font@text',
-  ruleComicAuthor: '@css:.manga-author .update@text',
+  ruleComicAuthor: '@css:.manga-author .author@text',
   ruleComicCover:
   '@css:.manga-img> img@src',
   ruleComicInstro: '@css:.manga-desc-font@text',
   ruleComicStatus: false,
-  ruleComicUpdate: '@css:span.top-title-right@text',
+  ruleComicUpdate: '@css:.manga-author .update@text',
   ruleChapterList: '-@css:.epsbox .epsbox-eplink',
   ruleChapterName: 'text',
   ruleChapterUrl: 'href',
@@ -23,7 +23,7 @@ var source20 = {
   ruleContentUrl:
   'http://www.buka.cn',
   ruleComicContent:
-  'importClass(Packages.java.util.ArrayList);importPackage(Packages.com.reader.comic.model);importPackage(Packages.java.lang);function parseImages(){var list=new ArrayList();var m=Pattern.compile(\'<img class=\\"lazy\\" data-original=\\"(http.*?jpg)\\" />\').matcher(content);if(m.find()){var i=0;do{list.add(new ImageUrl(++i,StringUtils.match("http.*jpg",m.group(0),0),false))}while(m.find())}return list};',
+  'importPackage(Packages.java.util.regex);importClass(Packages.java.util.ArrayList);importPackage(Packages.com.reader.comic.model);importPackage(Packages.java.lang);function parseImages(){var list=new ArrayList();var m=Pattern.compile(\'<img class=\\"lazy\\" data-original=\\"(http.*?jpg)\\" />\').matcher(content);if(m.find()){var i=0;do{list.add(new ImageUrl(++i,StringUtils.match("http.*jpg",m.group(0),0),false))}while(m.find())}return list};',
 
   // 推荐
 
