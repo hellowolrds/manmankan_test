@@ -18,7 +18,7 @@ var source35 = {
   ruleChapterList: '@css:#chapterList_ul_2 li',
   ruleChapterName: '@css:a@text',
   ruleChapterUrl: '@css:a@href',
-  ruleChapterAjax: ``,
+  ruleChapterAjax: `importClass(Packages.java.util.ArrayList);importPackage(Packages.com.reader.comic.model);importClass(Packages.com.reader.comic.soup.Node);importClass(Packages.com.reader.comic.utils.StringUtils);importPackage(Packages.java.lang);importPackage(Packages.org.json);importClass(Packages.okhttp3.FormBody);importClass(Packages.okhttp3.Headers);importClass(Packages.okhttp3.Request);importClass(Packages.okhttp3.RequestBody);importClass(Packages.okhttp3.OkHttpClient);function parseChapter(){var list=new ArrayList();var body=new Node(content);var cid=body.hrefWithSplit("#chapterList_ul_2 li:first-child a",0);var client=new OkHttpClient();var body=new FormBody.Builder().add("id",cid).add("id2","4").build();var request=new Request.Builder().url("http://m.kuman55.com/bookchapter/").post(body).build();var response=client.newCall(request).execute();if(response.isSuccessful()){var chapterList=new JSONArray(response.body().string());for(var i=0;i<chapterList.length();i++){var json=chapterList.getJSONObject(i);var title=json.getString("name");var path="/"+cid+"/"+json.getString("id")+".html";list.add(new Chapter(title,path))}}return list};`,
 
   // 图片详情
   ruleContentUrl:
@@ -34,14 +34,10 @@ function parseImages() {
     var list = new ArrayList();
     var base_url = "http://image.xmanhua.com/";
     var data = StringUtils.match("km5_img_url=\\'(.+)\\'", content, 1);
-
     var image_urls = DecryptionUtils.base64Decrypt(data);
-    
     eval("var arr="+image_urls+";");
-    Log.d("测试", arr);
     for (var i = 0; i < arr.length; i ++) {
         var url = arr[i];
-        Log.d("测试", url);
         url = url.split("\\|");
         url = url[1].replace("\\\\","");
         list.add(new ImageUrl(i+1, url,false));
