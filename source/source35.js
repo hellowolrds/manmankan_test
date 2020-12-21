@@ -28,7 +28,7 @@ var source35 = {
   importClass(Packages.java.util.ArrayList)
 importPackage(Packages.com.reader.comic.model)
 importClass(Packages.com.reader.comic.utils.DecryptionUtils)
-
+importClass(Packages.com.reader.comic.utils.StringUtils)
 function parseImages() {
     var list = new ArrayList();
     var base_url = "http://image.xmanhua.com/";
