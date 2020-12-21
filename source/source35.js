@@ -53,7 +53,7 @@ function parseImages() {
   ruleFindCid: '@css:.sixz-a@href@js:java.splitHref(result,0)',
   ruleFindCoverUrl:
   '@css:.sixz-a@style@js:result=result.match(/url(.+)/g)[0];result=result.replace("url(","").replace(")","")',
-  ruleFindList: '@css:.am-thumbnails .am-thumbnail',
+  ruleFindList: '@css:.list .am-thumbnail',
   ruleFindTitle: '@css:.d-nowrap a@text',
   ruleFindUpdate: '@css:.pic-text_6z@text',
   ruleFindUrl:
