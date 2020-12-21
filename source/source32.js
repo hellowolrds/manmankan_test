@@ -44,7 +44,7 @@ var source32 = {
   ruleSearchCoverUrl: '@css:img@src',
   ruleSearchList: '@css:.result-list > a',
   ruleSearchTitle: '@css:.cartoon-info h2@text',
-  ruleSearchUpdate: 'tag.span',
+  ruleSearchUpdate: '@css:.cartoon-info span@text',
   ruleSearchUrl:
   '!http://m.6mh7.com/search?keyword=searchKey@Header:{"user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1"}',
 
