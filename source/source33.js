@@ -25,7 +25,53 @@ var source33 = {
   'http://www.mangabz.comparam2@Header:{"user-agent", "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1"}',
   ruleComicContent:
   `
-  importClass(Packages.java.util.ArrayList);importPackage(Packages.com.reader.comic.model);importPackage(Packages.java.lang);function parseImages(){var list=new ArrayList();var reg=/\\}\\('(.+\\];)',([0-9]*),([0-9]*),('.+'\\)),([0-9]*),(\\{.*\\})/g;var params=reg.exec(content);params[1]=params[1].replace(/\\\\/g,"");eval(get_img(params[1],params[2],params[3],params[4],0,{}));for(var i=0;i<newImgs.length;i++){var url=newImgs[i];list.add(new ImageUrl(i+1,url,false))}return list}function get_img(p,a,c,k,e,d){eval("k="+k+";");e=function(c){return(c<a?"":e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!"".replace(/^/,String)){while(c--){d[e(c)]=k[c]||e(c)}k=[function(e){return d[e]}];e=function(){return"\\\\w+"};c=1}while(c--){if(k[c]){p=p.replace(new RegExp("\\\\b"+e(c)+"\\\\b","g"),k[c])}}return p};
+  importClass(Packages.java.util.ArrayList)
+importPackage(Packages.com.reader.comic.model)
+importPackage(Packages.java.lang)
+
+
+function parseImages() {
+    var list = new ArrayList();
+    var reg = /\\}\\('(.+\\];)',([0-9]*),([0-9]*),('.+'\\)),([0-9]*),(\\{.*\\})/g;
+    var params = reg.exec(content);
+    params[1] = params[1].replace(/\\\\/g, "");
+    eval(get_img(params[1], params[2], params[3], params[4], 0, {}));
+
+    for (var i = 0; i < newImgs.length; i ++) {
+        var url = newImgs[i];
+        list.add(new ImageUrl(i+1, url, false));
+    }
+
+    return list;
+}
+
+function get_img (p, a, c, k, e, d) {
+  eval("k="+k+";")
+  e = function(c) {
+      return (c < a ? '': e(parseInt(c / a))) + ((c = c % a) > 35 ? String.fromCharCode(c + 29) : c.toString(36))
+  };
+  if (!''.replace(/^/, String)) {
+      while (c--) {
+          d[e(c)] = k[c] || e(c)
+      }
+      k = [function(e) {
+          return d[e]
+      }];
+      e = function() {
+          return '\\\\w+'
+      };
+      c = 1
+  };
+  while (c--) {
+      if (k[c]) {
+          p = p.replace(new RegExp('\\\\b' + e(c) + '\\\\b', 'g'), k[c])
+      }
+  }
+  return p
+}
+
+
+  
   `,
 
   // 推荐
