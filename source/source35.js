@@ -38,7 +38,7 @@ function parseImages() {
     var image_urls = DecryptionUtils.base64Decrypt(data);
     
     eval("var arr="+image_urls+";");
-    Log.d("测试", arr.length);
+    Log.d("测试", arr);
     for (var i = 0; i < arr.length; i ++) {
         var url = arr[i];
         url = url.split("\\\\|");
