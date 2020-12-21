@@ -38,10 +38,10 @@ function parseImages() {
     var image_urls = DecryptionUtils.base64Decrypt(data);
     
     var arr = image_urls;
+    Log.d("测试", image_urls);
     for (var i = 0; i < arr.length; i ++) {
         var url = arr[i];
         url = url.split("\\\\|");
-        Log.d("测试",url[0]);
         url = url[1].replace("\\\\","");
         list.add(new ImageUrl(i+1, url,false));
         i++;
