@@ -24,7 +24,31 @@ var source24 = {
   ruleContentUrl:
   'http://99770.hhxxee.com/comic/param1/param2/',
   ruleComicContent:
-  'importPackage(Packages.java.lang);importClass(Packages.java.util.ArrayList);importPackage(Packages.com.reader.comic.model);importClass(Packages.com.reader.comic.utils.StringUtils);function parseImages(){var serverstr="http://20.125084.com/dm01/|http://20.125084.com/dm02/|http://20.125084.com/dm03/|http://20.125084.com/dm04/|http://20.125084.com/dm05/|http://20.125084.com/dm06/|http://20.125084.com/dm07/|http://20.125084.com/dm08/|http://20.125084.com/dm09/|http://20.125084.com/dm10/|http://20.125084.com/dm11/|http://20.125084.com/dm12/|http://20.125084.com/dm13/|http://20.125084.com/dm14/|http://20.125084.com/dm15/|http://20.125084.com/dm16/";var servers=serverstr.split("|");var list=new ArrayList();var str=StringUtils.match(\'var sFiles=\\"(.*?)\\"\',content,1);if(str!=null){var array=str.split("\\|");for(var i=0;i!=array.length;++i){list.add(new ImageUrl(i+1,servers[getPictureServers(array[i])]+array[i],false))}}return list}function getPictureServers(url){return Integer.parseInt(StringUtils.match("ok\\\\-comic(\\\\d+)",url,1))-1};',
+  `
+  importClass(Packages.java.util.ArrayList)
+importPackage(Packages.com.reader.comic.model)
+importClass(Packages.com.reader.comic.utils.StringUtils)
+importPackage(Packages.java.lang)
+
+function parseImages() {
+  var serverstr = "http://20.125084.com/dm01/|http://20.125084.com/dm02/|http://20.125084.com/dm03/|http://20.125084.com/dm04/|http://20.125084.com/dm05/|http://20.125084.com/dm06/|http://20.125084.com/dm07/|http://20.125084.com/dm08/|http://20.125084.com/dm09/|http://20.125084.com/dm10/|http://20.125084.com/dm11/|http://20.125084.com/dm12/|http://20.125084.com/dm13/|http://20.125084.com/dm14/|http://20.125084.com/dm15/|http://20.125084.com/dm16/";
+  var servers = serverstr.split("|");
+    var list = new ArrayList();
+    var str = StringUtils.match("var sFiles=\"(.*?)\"", content, 1);
+    if (str != null) {
+        var array = str.split("\\|");
+        for (var i = 0; i != array.length; ++i) {
+            list.add(new ImageUrl(i + 1, servers[getPictureServers(array[i])] + array[i], false));
+        }
+    }
+    return list;
+}
+
+function getPictureServers (url) {
+    return Integer.parseInt(StringUtils.match("ok\\-comic(\\d+)", url, 1)) - 1;
+}
+  
+  `,
 
   // 推荐
 
