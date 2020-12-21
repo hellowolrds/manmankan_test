@@ -12,7 +12,7 @@ var source27 = {
   ruleComicAuthor: '@css:.sub_r .txtItme:nth-child(2)@text',
   ruleComicCover:
   '@css:div#Cover > img@src',
-  ruleComicInstro: '@css:#comic-description@text',
+  ruleComicInstro: '@css:.txtDesc@text',
   ruleComicStatus: false,
   ruleComicLianZai: "",
   ruleComicUpdate: '@css:.sub_r .txtItme:nth-child(1)@text',
