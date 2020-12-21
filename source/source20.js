@@ -7,21 +7,21 @@ var source20 = {
   'function getHeader(){return Headers.of("Referer","http://m.buka.cn")}function getHeader2(url){return getHeader()}function getHeader3(){return getHeader()};',
  
   // 漫画详情
-  ruleComicInfoUrl: 'http://m.buka.cn/m/%s?Header{"User-Agent":"Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1","Host":"m.buka.cn"}',
-  ruleComicTitle: '@css:p.mangadir-glass-name@text',
-  ruleComicAuthor: '@css:.mangadir-glass-author@text',
+  ruleComicInfoUrl: 'http://www.buka.cn/detail/%s?Header{"User-Agent":"Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1","Host":"m.buka.cn"}',
+  ruleComicTitle: '@css:h1.title-font@text',
+  ruleComicAuthor: '@css:.manga-author .update@text',
   ruleComicCover:
-  '@css:.mangadir-glass-img > img@src',
-  ruleComicInstro: '@css:span.description_intro@text',
+  '@css:.manga-img> img@src',
+  ruleComicInstro: '@css:.manga-desc-font@text',
   ruleComicStatus: false,
   ruleComicUpdate: '@css:span.top-title-right@text',
-  ruleChapterList: '-@css:div.chapter-center > a',
+  ruleChapterList: '-@css:.epsbox .epsbox-eplink',
   ruleChapterName: 'text',
-  ruleChapterUrl: 'href@js:java.splitHref(result,-1)',
+  ruleChapterUrl: 'href',
 
   // 图片详情
   ruleContentUrl:
-  'http://m.buka.cn/read/param1/param2?Header{"user-agent":"Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1"}',
+  'http://www.buka.cn',
   ruleComicContent:
   'importClass(Packages.java.util.ArrayList);importPackage(Packages.com.reader.comic.model);importPackage(Packages.java.lang);function parseImages(){var list=new ArrayList();var m=Pattern.compile(\'<img class=\\"lazy\\" data-original=\\"(http.*?jpg)\\" />\').matcher(content);if(m.find()){var i=0;do{list.add(new ImageUrl(++i,StringUtils.match("http.*jpg",m.group(0),0),false))}while(m.find())}return list};',
 
