@@ -15,7 +15,7 @@ var source30 = {
   ruleComicInstro: '@css:.introduce .desc-box@text',
   ruleComicStatus: false,
   ruleComicLianZai: "",
-  ruleComicUpdate: '@css:#detail-chapter>span@text',
+  ruleComicUpdate: '@css:.last-update@text',
   ruleChapterList: '-@css:#j_chapter_list li',
   ruleChapterName: '@css:.name@text',
   ruleChapterUrl: '@css:a@href',
