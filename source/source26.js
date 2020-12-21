@@ -49,7 +49,7 @@ var source26 = {
   ruleSearchTitle: '@css:.book-list-info-title@text',
   ruleSearchUpdate: '',
   ruleSearchUrl:
-  '!https://kanmanhuala.com/search?keyword=searchPage&Header:{"user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1"}',
+  '!https://kanmanhuala.com/search?keyword=searchKey@Header:{"user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1"}',
 
 
   sort: '26',
