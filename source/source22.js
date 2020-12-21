@@ -28,7 +28,7 @@ var source22 = {
 
   // 推荐
 
-  ruleFindAuthor: '@css:.info@js:result.replace("作者:","");',
+  ruleFindAuthor: '@css:.info@text@js:result.replace("作者:","");',
   ruleFindCid: '@css:.ImgA@href@js:java.splitHref(result, -1)',
   ruleFindCoverUrl:
   '@css:.ImgA img@src',
