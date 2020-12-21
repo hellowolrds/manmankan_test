@@ -4,7 +4,7 @@ var source27 = {
   comicSourceUrl: 'http://m.517manhua.com',
   enable: true,
   imgHeaders:
-  'function getHeader(){return Headers.of("User-Agent","Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1")}function getHeader2(url){return getHeader()}function getHeader3(){return getHeader()};',
+  'function getHeader(){return Headers.of("Referer","http://m.517manhua.com/")}function getHeader2(url){return getHeader()}function getHeader3(){return getHeader()};',
  
   // 漫画详情
   ruleComicInfoUrl: 'http://m.517manhua.com/%s/',
