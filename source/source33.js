@@ -16,7 +16,7 @@ var source33 = {
   ruleComicStatus: false,
   ruleComicLianZai: "",
   ruleComicUpdate: '',
-  ruleChapterList: '@css:.detail-list .detail-list-item@text',
+  ruleChapterList: '@css:.detail-list .detail-list-item',
   ruleChapterName: 'text',
   ruleChapterUrl: '@css:a@href',
 
