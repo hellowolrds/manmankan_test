@@ -15,7 +15,7 @@ var source20 = {
   ruleComicInstro: '@css:.manga-desc-font@text',
   ruleComicStatus: false,
   ruleComicUpdate: '@css:.manga-author .update@text',
-  ruleChapterList: '@css:.epsbox .epsbox-eplink',
+  ruleChapterList: '-@css:.epsbox .epsbox-eplink',
   ruleChapterName: 'text',
   ruleChapterUrl: 'href',
 
