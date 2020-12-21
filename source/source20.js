@@ -21,7 +21,7 @@ var source20 = {
 
   // 图片详情
   ruleContentUrl:
-  'http://www.buka.cn/%s',
+  'http://www.buka.cnparam2',
   ruleComicContent:
   'importPackage(Packages.java.util.regex);importClass(Packages.java.util.ArrayList);importPackage(Packages.com.reader.comic.model);importPackage(Packages.java.lang);function parseImages(){var list=new ArrayList();var m=Pattern.compile(\'<img class=\\"lazy\\" data-original=\\"(http.*?jpg)\\" />\').matcher(content);if(m.find()){var i=0;do{list.add(new ImageUrl(++i,StringUtils.match("http.*jpg",m.group(0),0),false))}while(m.find())}return list};',
 
