@@ -7,7 +7,7 @@ var source26 = {
   'function getHeader(){return Headers.of("Referer","http://99770.hhxxee.com")}function getHeader2(url){return getHeader()}function getHeader3(){return getHeader()};',
  
   // 漫画详情
-  ruleComicInfoUrl: 'https://kanmanhuala.com/book/%s@Header:{"user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1"}',
+  ruleComicInfoUrl: 'https://kanmanhuala.com/book/%s@Header:{"User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1"}',
   ruleComicTitle: '@css:.detail-main .detail-main-info-title@text',
   ruleComicAuthor: '@css:.detail-main-info:nth-child(2) a@text',
   ruleComicCover:
