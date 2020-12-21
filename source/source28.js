@@ -15,7 +15,7 @@ var source28 = {
   ruleComicInstro: '@css:#workint@text',
   ruleComicStatus: false,
   ruleComicLianZai: "",
-  ruleComicUpdate: '@css:.cy_zhangjie_top p:first-child@text',
+  ruleComicUpdate: '@css:.cy_zhangjie_top a@text',
   ruleChapterList: '@css:#mh-chapter-list-ol-0 li',
   ruleChapterName: '@css:a@text',
   ruleChapterUrl: '@css:a@href',
