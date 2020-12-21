@@ -1,6 +1,6 @@
 
 var source35 = { 
-  comicSourceName: '六漫画',
+  comicSourceName: '酷漫屋',
   comicSourceUrl: 'http://m.6mh7.com',
   enable: true,
   imgHeaders:
