@@ -34,9 +34,9 @@ function parseImages() {
   var serverstr = "http://20.125084.com/dm01/|http://20.125084.com/dm02/|http://20.125084.com/dm03/|http://20.125084.com/dm04/|http://20.125084.com/dm05/|http://20.125084.com/dm06/|http://20.125084.com/dm07/|http://20.125084.com/dm08/|http://20.125084.com/dm09/|http://20.125084.com/dm10/|http://20.125084.com/dm11/|http://20.125084.com/dm12/|http://20.125084.com/dm13/|http://20.125084.com/dm14/|http://20.125084.com/dm15/|http://20.125084.com/dm16/";
   var servers = serverstr.split("|");
     var list = new ArrayList();
-    var str = StringUtils.match("var sFiles=\"(.*?)\"", content, 1);
+    var str = StringUtils.match("var sFiles=\\"(.*?)\\"", content, 1);
     if (str != null) {
-        var array = str.split("\\|");
+        var array = str.split("\\\\|");
         for (var i = 0; i != array.length; ++i) {
             list.add(new ImageUrl(i + 1, servers[getPictureServers(array[i])] + array[i], false));
         }
