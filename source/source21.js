@@ -22,7 +22,7 @@ var source21 = {
 
   // 图片详情
   ruleContentUrl:
-  'http://m.89mh.comparam2.html?Header{"User-Agent":"Mozilla/5.0 (Linux; Android 4.1.1; Nexus 7 Build/JRO03D) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166  Safari/535.19"}',
+  'http://m.89mh.comparam2?Header{"User-Agent":"Mozilla/5.0 (Linux; Android 4.1.1; Nexus 7 Build/JRO03D) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166  Safari/535.19"}',
   ruleComicContent:
   'importClass(Packages.java.util.ArrayList);importPackage(Packages.com.reader.comic.model);importClass(Packages.com.reader.comic.utils.StringUtils);importClass(Packages.com.reader.comic.utils.DecryptionUtils);function parseImages(){var list=new ArrayList();var base_url="http://image.xmanhua.com/";var data=StringUtils.match(\'qTcms_S_m_murl_e=\\\\\\"(.+)\\\\\\";\',content,1);var image_urls=DecryptionUtils.base64Decrypt(data);var arr=image_urls.split("\\\\$qingtiandy\\\\$");for(var i=0;i<arr.length;i++){var url=arr[i];list.add(new ImageUrl(i+1,url,false));i++}return list};',
 
