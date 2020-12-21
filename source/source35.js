@@ -50,7 +50,7 @@ function parseImages() {
   // 推荐
 
   ruleFindAuthor: '',
-  ruleFindCid: '@css:a@href@js:java.splitHref(result,0)',
+  ruleFindCid: '@css:.sixz-a@href@js:java.splitHref(result,0)',
   ruleFindCoverUrl:
   '@css:.sixz-a@style@js:result=result.match(/url(.+)/g)[0];result=result.replace("url(","").replace(")","")',
   ruleFindList: '@css:.am-thumbnails .am-thumbnail',
