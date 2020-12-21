@@ -31,7 +31,7 @@ var source21 = {
   ruleFindAuthor: '',
   ruleFindCid: '@css:.mh-item-tip > a@href@js:result=result.substring(1,result.length-1);result=result.replace("/","_");',
   ruleFindCoverUrl:
-  '@css:.mh-cover@style@js:result.match(/url(.+)/g)[0]',
+  '@css:.mh-cover@style@js:result.match(/url(.+)/g)[1]',
   ruleFindList: '@css:#ul_list > li',
   ruleFindTitle: '@css:.mh-item-detali .title@text',
   ruleFindUpdate: '@css:.chapter@text',
