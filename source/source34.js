@@ -15,9 +15,9 @@ var source34 = {
   ruleComicInstro: '@css:.comic-intro@text',
   ruleComicStatus: false,
   ruleComicUpdate: '@css:.box-back2 .txtItme:eq(3)@text@js:result.replace("更新时间：","")',
-  ruleChapterList: '@css:.catalog-list ul .chapter-item',
-  ruleChapterName: 'text',
-  ruleChapterUrl: 'href',
+  ruleChapterList: '@css:.chapter-item',
+  ruleChapterName: '@css: a@text',
+  ruleChapterUrl: '@css: a@href',
   ruleChapterAjax: ``,
 
   // 图片详情
