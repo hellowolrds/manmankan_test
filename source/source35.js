@@ -29,12 +29,14 @@ var source35 = {
 importPackage(Packages.com.reader.comic.model)
 importClass(Packages.com.reader.comic.utils.DecryptionUtils)
 importClass(Packages.com.reader.comic.utils.StringUtils)
+importClass(Packages.android.util.Log)
 function parseImages() {
     var list = new ArrayList();
     var base_url = "http://image.xmanhua.com/";
     var data = StringUtils.match("km5_img_url=\\'(.+)\\'", content, 1);
 
     var image_urls = DecryptionUtils.base64Decrypt(data);
+    Log.d("测试",image_urls);
     var arr = image_urls;
     for (var i = 0; i < arr.length; i ++) {
         var url = arr[i];
