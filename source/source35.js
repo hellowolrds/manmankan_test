@@ -42,7 +42,7 @@ function parseImages() {
     for (var i = 0; i < arr.length; i ++) {
         var url = arr[i];
         Log.d("测试", url);
-        url = url.split("\\\\|");
+        url = url.split("\\|");
         url = url[1].replace("\\\\","");
         list.add(new ImageUrl(i+1, url,false));
         i++;
