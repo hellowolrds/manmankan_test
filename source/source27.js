@@ -42,14 +42,14 @@ var source27 = {
 
   // 搜索
 
-  ruleSearchAuthor: '',
-  ruleSearchCid: '@css:a.ImgA@href@js:result=result.substring(1,result.length-1);result=result.replace("/","_");',
-  ruleSearchCoverUrl: '@css:a.ImgA > img@src',
-  ruleSearchList: '@css:ul#listbody > li',
-  ruleSearchTitle: '@css:a.txtA@text',
-  ruleSearchUpdate: '',
+  ruleSearchAuthor: '@css:.mh-works-decs@text',
+  ruleSearchCid: '@css:.mh-works-title h4>a@href@js:result=result.substring(1,result.length-1);result=result.replace("/","_");',
+  ruleSearchCoverUrl: '@css:.mh-nlook-w > img@src',
+  ruleSearchList: '@css:.mh-search-list > li',
+  ruleSearchTitle: '@css:.mh-works-title h4@text',
+  ruleSearchUpdate: '@css:.mh-up-time@text',
   ruleSearchUrl:
-  '!http://m.517manhua.com/statics/search.aspx?key=searchKey@Header:{"User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1"}',
+  'http://www.517manhua.com/statics/search.aspx?key=searchKey&page=searchPage',
 
 
   sort: '27',
