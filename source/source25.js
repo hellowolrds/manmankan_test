@@ -31,7 +31,7 @@ var source25 = {
   // 推荐
 
   ruleFindAuthor: '',
-  ruleFindCid: '@css:.title > a@text@js:java.splitHref(result, 1)',
+  ruleFindCid: '@css:.title > a@href@js:java.splitHref(result, 1)',
   ruleFindCoverUrl:
   '@css:li:first-child .pic img@src',
   ruleFindList: '@css:.cy_list_r .cy_list_mh > ul',
