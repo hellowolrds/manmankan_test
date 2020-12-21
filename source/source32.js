@@ -11,10 +11,10 @@ var source32 = {
   ruleComicTitle: '@css:h1.cartoon-title@text',
   ruleComicAuthor: '@css:.author@text',
   ruleComicCover:
-  '@css:.cartoon-poster@src',
-  ruleComicInstro: '@css:#js_desc_content@text',
+  '@css:.banner>.cartoon-poster@src',
+  ruleComicInstro: '@css:.introduction@text',
   ruleComicStatus: false,
-  ruleComicUpdate: '@css:.introduction@text',
+  ruleComicUpdate: '@css:#js_read_catalog .update-time@text',
   ruleChapterList: '@css:#chapter-list1 a',
   ruleChapterName: 'text',
   ruleChapterUrl: 'href',
