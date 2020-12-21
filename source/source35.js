@@ -1,7 +1,7 @@
 
 var source35 = { 
   comicSourceName: '酷漫屋',
-  comicSourceUrl: 'http://m.6mh7.com',
+  comicSourceUrl: 'http://m.kuman55.com',
   enable: true,
   imgHeaders:
   'function getHeader(){return Headers.of("user-agent","Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1")}function getHeader2(url){return getHeader()}function getHeader3(){return getHeader()};',
