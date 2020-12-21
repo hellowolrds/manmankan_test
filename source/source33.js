@@ -43,7 +43,7 @@ var source33 = {
   // 搜索
 
   ruleSearchAuthor: '',
-  ruleSearchCid: '@css:href@js:java.splitHref(result, 0)',
+  ruleSearchCid: 'href@js:java.splitHref(result, 0)',
   ruleSearchCoverUrl: '@css:.manga-item-cover@src',
   ruleSearchList: '@css:.manga-list > a',
   ruleSearchTitle: '@css:.manga-item-title@text',
