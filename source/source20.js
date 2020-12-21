@@ -15,13 +15,13 @@ var source20 = {
   ruleComicInstro: '@css:.manga-desc-font@text',
   ruleComicStatus: false,
   ruleComicUpdate: '@css:.manga-author .update@text',
-  ruleChapterList: '-@css:.epsbox .epsbox-eplink',
+  ruleChapterList: '@css:.epsbox .epsbox-eplink',
   ruleChapterName: 'text',
   ruleChapterUrl: 'href',
 
   // 图片详情
   ruleContentUrl:
-  'http://www.buka.cn',
+  'http://www.buka.cn/%s',
   ruleComicContent:
   'importPackage(Packages.java.util.regex);importClass(Packages.java.util.ArrayList);importPackage(Packages.com.reader.comic.model);importPackage(Packages.java.lang);function parseImages(){var list=new ArrayList();var m=Pattern.compile(\'<img class=\\"lazy\\" data-original=\\"(http.*?jpg)\\" />\').matcher(content);if(m.find()){var i=0;do{list.add(new ImageUrl(++i,StringUtils.match("http.*jpg",m.group(0),0),false))}while(m.find())}return list};',
 
