@@ -9,7 +9,7 @@ var source26 = {
   // 漫画详情
   ruleComicInfoUrl: 'https://kanmanhuala.com/book/%s@Header:{"User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1"}',
   ruleComicTitle: '@css:.detail-main .detail-main-info-title@text',
-  ruleComicAuthor: '@css:.detail-main-info-author:nth-child(2) a@text',
+  ruleComicAuthor: '@css:.detail-main-info-author:nth-child(3) a@text',
   ruleComicCover:
   '@css:.detail-main-cover img@data-original',
   ruleComicInstro: '@css:.detail-desc@text',
