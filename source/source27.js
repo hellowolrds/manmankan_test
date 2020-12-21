@@ -44,7 +44,7 @@ var source27 = {
 
   ruleSearchAuthor: '@css:.mh-works-decs@text',
   ruleSearchCid: '@css:.mh-works-title h4>a@href@js:result=result.substring(1,result.length-1);result=result.replace("/","_");',
-  ruleSearchCoverUrl: '@css:.mh-nlook-w > img@src',
+  ruleSearchCoverUrl: '@css:.mh-nlook-w img@src',
   ruleSearchList: '@css:.mh-search-list > li',
   ruleSearchTitle: '@css:.mh-works-title h4@text',
   ruleSearchUpdate: '@css:.mh-up-time@text',
