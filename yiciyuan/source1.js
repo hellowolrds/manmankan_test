@@ -66,7 +66,7 @@ function parseImages() {
   ruleSearchCoverUrl: 'tag.img@src',
   ruleSearchList: 'class.item',
   ruleSearchTitle: 'class.title@text',
-  ruleSearchUpdate: '@css:.pic-text_6z@text',
+  ruleSearchUpdate: '@css:.text@text',
   ruleSearchUrl:
   '!http://yunmanhua2.yueriji.com/app/index.php?i=2&c=entry&do=search&m=pinzhi_mh@keyword=searchKey@Header:{"user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1"}',
 
