@@ -9,7 +9,7 @@ var source23 = {
   // 漫画详情
   ruleComicInfoUrl: 'https://m.mhxin.com/manhua/%s/',
   ruleComicTitle: '@css:#comicName@text',
-  ruleComicAuthor: '@css:.sub_r .txtItme@text',
+  ruleComicAuthor: '@css:.sub_r .txtItme:first-child@text',
   ruleComicCover:
   '@css:#Cover > img@src',
   ruleComicInstro: '@css:#simple-des@text',
