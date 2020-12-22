@@ -39,6 +39,7 @@ var source35 = require("./source/source35");
 
 // 异次元
 var source36 = require("./yiciyuan/source1");
+var source37 = require("./yiciyuan/source2");
 
 var arr = [];
 
@@ -80,6 +81,7 @@ arr.push(source35);
 
 // 异次元
 arr.push(source36);
+arr.push(source37);
 
 
 var str = JSON.stringify(arr);
