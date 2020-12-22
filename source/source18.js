@@ -9,7 +9,7 @@ var source18 = {
   // 漫画详情
   ruleComicInfoUrl: 'https://www.manhuatai.com/%s/',
   ruleComicTitle: '@css:h1#detail-title@title',
-  ruleComicAuthor: '$.authors[*].tag_name',
+  ruleComicAuthor: '@css:.name-type .name@text',
   ruleComicCover:
   '@css:div.detail-cover > img@data-src@js:"https:"+result',
   ruleComicInstro: '@css:div#js_comciDesc > p.desc-content@text',
