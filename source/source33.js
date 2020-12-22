@@ -9,7 +9,7 @@ var source33 = {
   // 漫画详情
   ruleComicInfoUrl: 'http://www.mangabz.com/%s/@Header:{"user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1"}',
   ruleComicTitle: '@css:.detail-main-title@text',
-  ruleComicAuthor: '@css:.detail-main-subtitle span:last-child@text',
+  ruleComicAuthor: '@css:.detail-main-subtitle .block a@text',
   ruleComicCover:
   '@css:.detail-bar-img@src',
   ruleComicInstro: '@css:.detail-main-content@text',
