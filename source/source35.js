@@ -9,7 +9,7 @@ var source35 = {
   // 漫画详情
   ruleComicInfoUrl: 'http://m.kuman55.com/%s/?@Header:{"user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1"}',
   ruleComicTitle: '@css:h1.txtItme@text',
-  ruleComicAuthor: '@css:.sub_r .txtItme@text@js:result.replace("作者：","")',
+  ruleComicAuthor: '@css:.sub_r .txtItme:nth-child(3)@text@js:result.replace("作者：","")',
   ruleComicCover:
   '@css:#Cover>img@src',
   ruleComicInstro: '@css:.d-nowrap-clamp@text',
