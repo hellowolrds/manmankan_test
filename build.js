@@ -79,6 +79,7 @@ var source73 = require("./yiciyuan/source38");
 var source74 = require("./yiciyuan/source39");
 var source75 = require("./yiciyuan/source40");
 var source76 = require("./yiciyuan/source41");
+var source77 = require("./yiciyuan/source42");
 
 var arr = [];
 
@@ -160,6 +161,7 @@ arr.push(source73);
 arr.push(source74);
 arr.push(source75);
 arr.push(source76);
+arr.push(source77);
 
 var str = JSON.stringify(arr);
 
