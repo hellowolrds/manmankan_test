@@ -274,12 +274,17 @@ var by = function(a, b) {
     var c = params_data[a];
     return c;
 };
+//[Function: decompressFromBase64]
+console.log(LZString[by('0x26')]);
+console.log(LZString.decompressFromBase64(img_data));
+
+var base = "https://p1.manhuacat.com/uploads/";
 
 let img_data_arr = LZString[by('0x26')](img_data)[by('0x8')](',');
 
-for (var i = 0; i < img_data_arr.length; i ++) {
-    console.log("https://p1.manhuacat.com/uploads/"+img_data_arr[i]);
-}
+// for (var i = 0; i < img_data_arr.length; i ++) {
+//     console.log("https://p1.manhuacat.com/uploads/"+img_data_arr[i]);
+// }
 
 
 
