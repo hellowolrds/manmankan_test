@@ -258,22 +258,24 @@ var LZString = function() {
 
 let img_data = "JYWw5g9AzAHA7FATBArFAbI9AWCAGARhQDoArABzABpRJYFk1Md8C4zKbxp4lUMsuQgE4O1Wjwb9mQxHjFc6vRgJZ5EBBRPp8mg/IkRbuOlTINRjSqXrWJsVybtWySFcSeXT969I9Peduzuik5mPogw/l62sqIh2jEu+FDyCZ42yXhQmunWzubZRnlhgUJQliUBsSkOVUmFUG6ciZmNfvVtPlDBLRkF3VGdA2pQ8X354WrYaROlNXjYuXPVWdjFKw0+2JWbXdN1eyNC2M0ek2X42B1HUye95/NrQ7eXi+OPq4Uos59baihln99kIUBtgcd8GhoiCoYcIXcoWdQl8fCgbgi3igHij/qCXpiFigPrjYXh0L9SZDyUCqYjyeC6W90LtCVl0MjWtT0BimQt0DiufT0AS+eySUK3nBfkA"
 
-var _0x486a = ['json', '&_KE=', '.pjax-container', 'chapter_num', 'parent', 'lazyload', 'decompressFromBase64', 'html', '\x22\x20href=\x22javascript:;\x22\x20onclick=\x22vg_pjax($(this));\x22\x20class=\x22btn\x20btn-primary\x20mb-1\x20pnext\x20next\x22\x20title=\x22下一页\x22>下页</a>\x0a\x09\x09<a\x20href=\x22javascript:goNumPage(\x27next\x27);\x22\x20class=\x22btn\x20btn-primary\x20mb-1\x20ml-1\x22\x20title=\x22下集\x22>下集</a>\x0a\x09\x09</div>\x0a\x09\x09</nav>\x0a\x09', 'asc', '\x22\x20title=\x22上一页\x22>上页</a>\x0a\x09\x09<div\x20class=\x22mx-1\x20mb-1\x22>\x0a\x09\x09<label\x20for=\x22page-selector\x22\x20class=\x22sr-only\x22>翻页</label>\x0a\x09\x09<select\x20class=\x22form-control\x20vg-page-selector\x22\x20id=\x22page-selector\x22\x20onchange=\x22vg_pjax($(this),\x201);\x22>\x0a\x09', 'ajax', '\x0a\x09\x09</select>\x0a\x09\x09</div>\x0a\x09\x09<a\x20data-p=\x22', '/uploads/', 'val', '/chapter_num?chapter_id=', '.pre', 'pre', 'location', '页</option>', 'round', 'next', 'preload', '\x0a\x09\x09<nav\x20aria-label=\x22Page\x20navigation\x22>\x0a\x09\x09<div\x20class=\x22form-inline\x22>\x0a\x09\x09<a\x20href=\x22javascript:goNumPage(\x27pre\x27);\x22\x20class=\x22btn\x20btn-primary\x20mb-1\x20mr-1\x22\x20title=\x22上集\x22>上集</a>\x0a\x09\x09<a\x20data-p=\x22', '.sort', 'chapter-type', 'url', 'split', '&type=', 'data', 'click', 'length', 'chapter-domain', 'get', '.vg-r-data', 'fadeIn', 'keydown', 'chapter-key', 'which', '没有啦，去发表下评论吧', '.show-pic', 'attr', 'href', 'push', 'replace', 'selected', '?_KS=', '.html', '<option\x20value=\x22', 'src', 'code'];
-(function(_0x297ff1, _0x486af2) {
-    var _0x463d24 = function(_0x35d717) {
-        while (--_0x35d717) {
-            _0x297ff1['push'](_0x297ff1['shift']());
+var params_data = ['json', '&_KE=', '.pjax-container', 'chapter_num', 'parent', 'lazyload', 'decompressFromBase64', 'html', '\x22\x20href=\x22javascript:;\x22\x20onclick=\x22vg_pjax($(this));\x22\x20class=\x22btn\x20btn-primary\x20mb-1\x20pnext\x20next\x22\x20title=\x22下一页\x22>下页</a>\x0a\x09\x09<a\x20href=\x22javascript:goNumPage(\x27next\x27);\x22\x20class=\x22btn\x20btn-primary\x20mb-1\x20ml-1\x22\x20title=\x22下集\x22>下集</a>\x0a\x09\x09</div>\x0a\x09\x09</nav>\x0a\x09', 'asc', '\x22\x20title=\x22上一页\x22>上页</a>\x0a\x09\x09<div\x20class=\x22mx-1\x20mb-1\x22>\x0a\x09\x09<label\x20for=\x22page-selector\x22\x20class=\x22sr-only\x22>翻页</label>\x0a\x09\x09<select\x20class=\x22form-control\x20vg-page-selector\x22\x20id=\x22page-selector\x22\x20onchange=\x22vg_pjax($(this),\x201);\x22>\x0a\x09', 'ajax', '\x0a\x09\x09</select>\x0a\x09\x09</div>\x0a\x09\x09<a\x20data-p=\x22', '/uploads/', 'val', '/chapter_num?chapter_id=', '.pre', 'pre', 'location', '页</option>', 'round', 'next', 'preload', '\x0a\x09\x09<nav\x20aria-label=\x22Page\x20navigation\x22>\x0a\x09\x09<div\x20class=\x22form-inline\x22>\x0a\x09\x09<a\x20href=\x22javascript:goNumPage(\x27pre\x27);\x22\x20class=\x22btn\x20btn-primary\x20mb-1\x20mr-1\x22\x20title=\x22上集\x22>上集</a>\x0a\x09\x09<a\x20data-p=\x22', '.sort', 'chapter-type', 'url', 'split', '&type=', 'data', 'click', 'length', 'chapter-domain', 'get', '.vg-r-data', 'fadeIn', 'keydown', 'chapter-key', 'which', '没有啦，去发表下评论吧', '.show-pic', 'attr', 'href', 'push', 'replace', 'selected', '?_KS=', '.html', '<option\x20value=\x22', 'src', 'code'];
+(function(a, b) {
+    var d = function(t) {
+        while (--t) {
+            a['push'](a['shift']());
         }
     };
-    _0x463d24(++_0x486af2);
-}(_0x486a, 0x112));
-var _0x463d = function(_0x297ff1, _0x486af2) {
-    _0x297ff1 = _0x297ff1 - 0x0;
-    var _0x463d24 = _0x486a[_0x297ff1];
-    return _0x463d24;
+    d(++b);
+}(params_data, 0x112));
+
+
+var by = function(a, b) {
+    a = a - 0x0;
+    var c = params_data[a];
+    return c;
 };
 
-let img_data_arr = LZString[_0x463d('0x26')](img_data)[_0x463d('0x8')](',');
+let img_data_arr = LZString[by('0x26')](img_data)[by('0x8')](',');
 
 for (var i = 0; i < img_data_arr.length; i ++) {
     console.log("https://p1.manhuacat.com/uploads/"+img_data_arr[i]);
