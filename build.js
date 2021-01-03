@@ -190,19 +190,31 @@ arr.push(source88);
 arr.push(source89);
 arr.push(source90);
 
+var net_arr = [];
 
 for (var i = 0; i < arr.length; i ++) {
   arr[i].imgHeaders = utils.encrypted(arr[i].imgHeaders);
   arr[i].ruleComicContent = utils.encrypted(arr[i].ruleComicContent);
   arr[i].isEncode = true;
+
+  if ( i <=34) {
+    net_arr.push(arr[i]);
+  }
 }
 
 
 
 var str = JSON.stringify(arr);
 
+var str2 = JSON.stringify(net_arr);
+
 
 fs.writeFile("./data.json", str, error => {
+  if (error) return console.log("写入文件失败,原因是" + error.message);
+  console.log("写入成功");
+});
+
+fs.writeFile("./data2.json", str2, error => {
   if (error) return console.log("写入文件失败,原因是" + error.message);
   console.log("写入成功");
 });
