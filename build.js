@@ -1,4 +1,5 @@
 const fs = require("fs");
+const utils = require("./build_xinxin");
 
 var source1 = require("./source/source1");
 var source2 = require("./source/source2");
@@ -188,6 +189,15 @@ arr.push(source87);
 arr.push(source88);
 arr.push(source89);
 arr.push(source90);
+
+
+for (var i = 0; i < arr.length; i ++) {
+  arr[i].imgHeaders = utils.encrypted(arr[i].imgHeaders);
+  arr[i].ruleComicContent = utils.encrypted(arr[i].ruleComicContent);
+  arr[i].isEncode = true;
+}
+
+
 
 var str = JSON.stringify(arr);
 
