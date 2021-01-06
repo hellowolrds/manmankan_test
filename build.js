@@ -96,6 +96,10 @@ var source89 = require("./yiciyuan/source54");
 var source90 = require("./yiciyuan/source55");
 var source91 = require("./yiciyuan/source56");
 
+
+// 新建文件夹图源
+var source92 = require("./source2/source1");
+
 var arr = [];
 
 arr.push(source1);
@@ -191,6 +195,7 @@ arr.push(source88);
 arr.push(source89);
 arr.push(source90);
 arr.push(source91);
+arr.push(source92);
 
 var net_arr = [];
 
@@ -204,7 +209,7 @@ for (var i = 0; i < arr.length; i ++) {
     net_arr.push(arr[i]);
   }
 }
-
+//https://code.aliyun.com/csj504/manmankan_test/raw/master/data.json 图源拉取地址
 
 
 var str = JSON.stringify(arr);
