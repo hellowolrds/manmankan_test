@@ -101,6 +101,7 @@ var source91 = require("./yiciyuan/source56");
 var source92 = require("./source2/source1");
 var source93 = require("./source2/source2");
 var source94 = require("./source2/source3");
+var source95 = require("./source2/source4");
 
 var arr = [];
 
@@ -202,6 +203,7 @@ arr.push(source91);
 arr.push(source92);
 arr.push(source93);
 arr.push(source94);
+arr.push(source95);
 
 
 var net_arr = [];
