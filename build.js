@@ -99,6 +99,7 @@ var source91 = require("./yiciyuan/source56");
 
 // 新建文件夹图源
 var source92 = require("./source2/source1");
+var source93 = require("./source2/source2");
 
 var arr = [];
 
@@ -195,7 +196,11 @@ arr.push(source88);
 arr.push(source89);
 arr.push(source90);
 arr.push(source91);
+
+
 arr.push(source92);
+arr.push(source93);
+
 
 var net_arr = [];
 
