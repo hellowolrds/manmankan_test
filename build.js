@@ -102,6 +102,7 @@ var source92 = require("./source2/source1");
 var source93 = require("./source2/source2");
 var source94 = require("./source2/source3");
 var source95 = require("./source2/source4");
+var source96 = require("./source2/source5");
 
 var arr = [];
 
@@ -204,6 +205,7 @@ arr.push(source92);
 arr.push(source93);
 arr.push(source94);
 arr.push(source95);
+arr.push(source96);
 
 
 var net_arr = [];
