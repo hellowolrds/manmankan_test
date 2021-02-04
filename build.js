@@ -1,5 +1,5 @@
 const fs = require("fs");
-const utils = require("./build_xinxin");
+const utils = require("./encode");
 
 var source1 = require("./source/source1");
 var source2 = require("./source/source2");
